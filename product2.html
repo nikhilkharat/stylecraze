@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #firstdiv{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        margin-bottom: 20px;
+        row-gap: 50px;
+    }
+    #firstdiv>div{
+        margin-left: 25px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    }
+    #firstdiv>div:hover{
+        width: 85%;    
+    }
+
+    /* #firstdiv>div.grow:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+    } */
+    
+    #firstdiv>div>h5{
+        text-align: center;
+        font-family: sans-serif;
+        color: #ff5a78;
+    }
+    #firstdiv>div>p{
+        text-align: center;
+    }
+    #firstdiv>div>button{
+        margin-left: 35%;
+        padding: 5px 10px;
+        background-color: #ff5a78;
+        color: white;
+        border: none;
+        margin-bottom: 10px;
+    }
+    /* #firstdiv>div>button.swing:hover{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+    } */
+
+    #firstdiv>div>img{
+        margin-left: 25%;
+        width: 150px;
+        height: 160px;
+        transition:all 0.3s ease;
+    }
+    img{
+        width: 30%;
+        height: 30px;
+    }
+    #main{
+        margin-top: 50px;
+    }
+    </style>
+</head>
+<body>
+ <img src="https://cdn2.stylecraze.com/wp-content/uploads/static-content/logos/sc-logo.png.webp" alt="Error">
+  <div id="main">
+   <div id="firstdiv">
+    <div>
+        <img src="https://m.media-amazon.com/images/I/41ykZobjRCL.jpg" alt="Error">
+        <h5>Curling Prefection Cream</h5>
+        <span>
+            <i class="fas fa-search-plus"></i>
+        </span>
+        <p>$1549</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31AT66l6GsL.jpg" alt="Error">
+        <h5>BIOLAGE Styling Gelee</h5>
+        <p>$1249</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31Vz8stisVL.jpg" alt="Error">
+        <h5> Moroccanoil Styling Cream</h5>
+        <p>$699</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31MAEKqmHVL.jpg" alt="Error">
+        <h5>Argan Oil</h5>
+        <p>$749</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/315paZyPXaL.jpg" alt="Error">
+        <h5>Kenra Volume Spray 25 </h5>
+        <p>$749</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31eW7fl4xIL.jpg" alt="Error">
+        <h5>Cake Beauty Curl Cream </h5>
+        <p>$1399</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     
+     <div>
+        <img src="https://m.media-amazon.com/images/I/41EPn6NXtsL.jpg" alt="Error">
+        <h5> Strictly Curls Lotion</h5>
+        <p>$1099</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/41f0WO5ONAL.jpg" alt="Error">
+        <h5>Crack Hair Cream</h5>
+        <p>$1299</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31mlL-2uOvL.jpg" alt="Error">
+        <h5>Color proof Spray</h5>
+        <p>$1459</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     
+     <div>
+        <img src="https://m.media-amazon.com/images/I/41FaeUAPNVL.jpg" alt="Error">
+        <h5>Vidal Sasoon Foam</h5>
+        <p>$849</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31A9O0aYfNL.jpg" alt="Error">
+        <h5>Oribi Supershine Cream</h5>
+        <p>$1550</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31fplTTQIcL.jpg" alt="Error">
+        <h5>R+Co Television Hair Masque</h5>
+        <p>$150</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/41FPHIuUBAL.jpg" alt="Error">
+        <h5>Cantu Avocado Curling Cream</h5>
+        <p>$1550</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31eW7fl4xIL.jpg" alt="Error">
+        <h5>Cake Beauty Curl Cream </h5>
+        <p>$1399</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+   </div>
+   </div>
+  </div> 
+</body>
+</html>
