@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Care</title>
+    <style>
+        p{
+            text-align: center;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+        #main{
+            width: 90%;
+            height: auto;
+            margin: auto;
+        }
+        #makeupButton{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+        
+
+
+        #makeupButton>button{
+            padding: 20px 30px;
+          border-color: #ff5a78;
+          border-radius: 5px;
+          font-size: 15px;
+          background-color: white;
+          cursor: pointer;
+        }
+        #sideimg{
+            display: flex;
+            justify-content: space-between;
+        }
+        #sideimg>div:nth-child(1){
+          margin-top: 20px;
+        }
+        #sideimg>div:last-child{
+            width: 25%;
+        }
+
+        #sideimg>div:last-child>p:nth-child(1){
+  text-align: center;
+            font-family: sans-serif;
+            color: #333333;
+            font-size: 24px;
+            margin-top: 100%;
+        }
+        #sideimg>div:last-child>p:nth-child(1)>a{
+            text-align: center;
+            font-family: sans-serif;
+            color: #333333;
+            font-size: 24px;
+            margin-top: 100%;
+        }
+        #sideimg>div:last-child>p:nth-child(2){
+            text-align: center;
+            color: #333333;
+            font-family: sans-serif;
+            font-size: 18px;
+            margin: 0px 0px 10px;
+        }
+        #sideimg>div:last-child>p:last-child{
+            text-align: left;
+            color: gray;
+            font-family: sans-serif;
+            font-size: 12px;
+            margin-top: 80%;
+            font-weight: bolder;
+        }
+        #midimg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+        }
+        #midimg>div{
+            width: 400px;
+            height: 450px;
+            margin-top: 50px;
+        }
+        #midimg>div>img{
+            width: 400px;
+            height: 450px;
+        }
+        #midimg>div>p:nth-child(1)>a{
+            color: #333333;
+            font-family: sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        #midimg>div>p:last-child{
+            color:gray;
+            font-family: sans-serif;
+            font-size: 13px;
+            text-align: left;
+            font-weight: bolder;
+        }
+        #midimg>div>p:last-child>a{
+            color:gray;
+            font-family: sans-serif;
+            font-size: 13px;
+            text-align: left;
+           
+        }
+
+        #midimg2{
+            display: flex;
+            margin-top: 20%;
+            column-gap: 30px
+        }
+
+        #midimg2>div>p:nth-child(1){
+            text-align: center;
+            font-size: 24px;
+            font-family: sans-serif;
+            color: #333333;
+            margin-top: 50%;
+        }
+        #midimg2>div>p:nth-child(1)>a{
+            text-align: center;
+            font-size: 24px;
+            font-family: sans-serif;
+            color: #333333;
+            margin-top: 50%;
+        }
+        #midimg2>div>p:nth-child(2){
+            text-align: center;
+            font-size: 18px;
+            font-family: sans-serif;
+            color: #333333;
+         }
+        #midimg2>div>p:last-child{
+            text-align: left;
+            font-size: 13px;
+            font-family: sans-serif;
+            color:gray;
+            font-weight: bolder;
+            margin-top: 70%;
+        }
+        #lastimg{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           column-gap: 30px;
+           margin-top: 50px;
+        }
+        #lastimg>div>img{
+            width: 400px;
+            height: 450px;
+        }
+        #lastimg>div>p>a{
+           color: #333333;
+           font-size: 24px;
+           font-family: sans-serif;
+           text-align: center;
+        }
+        #lastimg>div>p:last-child{
+            color: #333333;
+            font-size: 13px;
+            font-family: sans-serif;
+            text-align: left;
+            font-weight: bolder;
+        }
+        #lastimg>div>p:last-child>a{
+            color: #333333;
+            font-size: 13px;
+            font-family: sans-serif;
+            text-align: left;
+            
+        }
+
+        #lastimg2{
+            display: flex;
+           justify-content: space-between;
+           align-items: center;
+           column-gap: 30px;
+           margin-top: 50px;
+        }
+        #lastimg2>div>img{
+            width: 400px;
+            height: 450px;
+        }
+        #lastimg2>div>p>a{
+           color: #333333;
+           font-size: 24px;
+           font-family: sans-serif;
+           text-align: center;
+        }
+        #lastimg2>div>p:last-child{
+            color: #333333;
+            font-size: 13px;
+            font-family: sans-serif;
+            text-align: left;
+            font-weight: bolder;
+        }
+        #lastimg2>div>p:last-child>a{
+            color: #333333;
+            font-size: 13px;
+            font-family: sans-serif;
+            text-align: left;
+         
+        }
+     
+
+        #footer>div>ul{
+            display: flex;
+            column-gap: 10px;
+            font-weight: bolder;
+            text-align: center;
+            font-family: sans-serif;
+            /* width: 40%; */
+            margin-top: 50px;
+        }
+        #footer>div>ul>li>a{
+        font-size: 15px;
+        font-family: sans-serif;
+        color: gray;
+        }
+     #makeupButton>button:hover{
+        background-color: #ff5a78;
+        color: white;
+     }
+     #depth{
+        width: 100%;
+        height: 80px;
+     background-color: #e6e6e6;
+     margin-top: 20px;
+     }
+     #depth>p{
+        text-align: center;
+        font-size: 15px;
+     }
+     #depth>p>a{
+        text-align: center;
+        font-size: 15px;
+        color: #ff5a78;
+     }
+     #depth>p:last-child{
+        text-align: left;
+        font-size: 13px;
+        line-height: 18px;
+     } 
+     #depth>p:last-child>a{
+        color: #ff5a78;
+     } 
+
+    </style>
+</head>
+<body>
+    <p>HAIR CARE</p>
+    <div id="main">
+        <div id="makeupButton">
+            <button >Dry Hair Care</button>
+            <button>Hair Care Solutions</button>
+            <button>Dandruff</button>
+            <button>Hair Treatment </button>
+            <button>Basic Hair Care </button>
+            <button>Hair Fall</button>
+            <button>Hair Growth</button>
+            <button>Hair Care Ideas</button>
+        </div>
+        <div id="sideimg">
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/03/How-To-Make-Gray-Hair-Shine.jpg.webp" alt="Error">
+            </div>
+            <div>
+                <p><a href="https://www.stylecraze.com/articles/how-to-make-gray-hair-shiny/"> How To Make Gray Hair Shine</a> </p>
+                <p>Gray hair is considered a sign of wisdom and maturity, and it rarely goes unnoticed. But dull and dry gray hair can grab attention for all the wrong reasons. So if you want to make your gray hair shine and […]</p>
+                <p>REVIEWED BY TIFFANY YOUNG, CERTIFIED TRICHOLOGY PRACTITIONER, CERTIFIED TRICHOLOGY PRACTITIONER</p>        
+            </div>
+        </div>
+        <div id="midimg">
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/03/Psoriasis-Hair-Loss-Causes-And-Treatment.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/psoriasis-and-hair-loss/">Scalp Psoriasis Hair Loss: Causes, Treatment, And</a> </p>         
+                <p>MEDICALLY REVIEWED BY DR. SERGIO VAÑÓ GALVÁN, PHD, PHD </p>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/02/How-To-Use-Nettle-To-Promote-Hair-Health.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/nettle-for-hair/"> How To Use Nettle To Promote Hair Health</a></p>
+                <P><a href="https://www.stylecraze.com/author/swathihandoo/">BY SWATHI HANDU</a> </P>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/02/How-Long-To-Keep-Henna-On-The-Hair-.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/how-long-to-keep-henna-in-hair/"> How Long To Keep Henna On The Hair & The Right Way To Apply</a></p>
+                <P>REVIEWED BY GHANIMA ABDULLAH, COSMETOLOGIST, COSMETOLOGIST
+                </P>
+            </div>
+        </div>
+        <div id="midimg2">
+            <div>
+                <p><a href="https://www.stylecraze.com/articles/hair-shedding-vs-hair-loss/"> Hair Shedding Vs. Hair Loss: Know The Key Differences</a></p>
+                <p>Noticing more hair on your comb every day can be a cause for concern. While shedding 50 to 100 hair strands in a day is normal, anything beyond that may make you wonder if you have hair loss. But how […]</p>
+                <p>MEDICALLY REVIEWED BY DR. SONAM JESWANI RAMRAKHIANI, MBBS, DDV , MBBS, DDV </p>    
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/01/Differences-Between-Hair-Shedding-And-Hair-Loss-Banner.jpg.webp" alt="Error">
+            </div>
+        </div>
+        <div id="lastimg">
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/01/Alopecia-Areata-Causes-Types-And-Treatment.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/alopecia-hair-loss-treatment/"> Alopecia Areata Hair Loss – Causes, Symptoms, & Treatments</a></p>
+                <p>MEDICALLY REVIEWED BY DR. SHRUTI CHAVAN, MBBS, MBBS</p>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2019/02/Brazilian-Blowout-Tutorial-For-Smooth-And-Silky-Hair.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/everything-about-brazilian-blowout/">Brazilian Blowout Tutorial For Smooth And Silky Hair</a></p>
+                <p><a href="https://www.stylecraze.com/author/arshiya/">BY ARSHIYA SYEDA</a> </p>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/12/How-Long-You-Should-Wait-To-Wash-Your-Hair-After-Coloring-It-Banner.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/how-long-to-wait-to-wash-hair-after-coloring/"> How Long Should You Wait To Wash Your Hair After Coloring It?</a></p>
+                <p>REVIEWED BY MADISON DUFOUR, BARBER & COSMETOLOGIST, BARBER & COSMETOLOGIST </p>
+            </div>
+        </div>
+          <div id="lastimg2">
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/12/Does-Gabapentin-Cause-Hair-Loss.jpg.webp" alt="Error">
+                <p><a title="25 Best Eye Makeup Tutorials"  href="https://www.stylecraze.com/articles/does-gabapentin-cause-hair-loss/">Does Gabapentin Cause Hair Loss?</a> </p>
+                <p>MEDICALLY REVIEWED BY DR. SHRUTI CHAVAN, MBBS, MBBS</p>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/12/Everything-You-Need-To-Know-About-Permed-Hair-Banner.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/how-to-perm-hair/"> How To Perm Your Hair: Everything You Need To Know</a></p>
+                <p><a href="https://www.stylecraze.com/author/arshiya/">BY ARSHIYA SYEDA</a> </p>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/01/Is-Rosemary-Oil-Good-For-Hair.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/rosemary-a-herbal-remedy-for-hair-growth/">Rosemary Oil For Hair Growth – How To Use It And Side Effects</a> </p>
+                <p>MEDICALLY REVIEWED BY DR. SHRUTI CHAVAN, MBBS, MBBS</p>
+            </div>
+            </div>
+
+            <div id="footer">
+                <div>
+                    <ul>
+                        <li><a href="https://www.stylecraze.com/about-us/">About Us</a></li>
+                        <li> <a href="https://www.stylecraze.com/advertise-with-us/"> Advertise With Us</a></li>
+                        <li><a href="https://www.stylecraze.com/image-usage-policy/"> Image Uses Policy</a></li>
+                        <li><a href="https://www.stylecraze.com/privacy-policy/">Privacy Policy</a> </li>
+                        <li><a href="https://www.stylecraze.com/contact-us/">Contact Us</a> </li>
+                        <li><a href="https://www.stylecraze.com/terms-of-use/">Terms of Use</a> </li>
+                        <li> <a href="https://www.stylecraze.com/editorial-guidelines/">Editorial Guidlines</a> </li>
+                        <li><a href="https://www.stylecraze.com/affiliate-disclosure/">Affiliate Disclosure</a> </li>
+                        <li><a href="https://www.stylecraze.com/doctors-join/">Join Our Medical Board</a> </li>
+                        <li><a href="https://www.stylecraze.com/cookie-policy/"> Cookie Policy</a></li>
+                        <li><a title="Press Room" href="https://www.stylecraze.com/press/"> Press Room</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    <div id="depth">
+        <p>Copyright © 2011 - 2022  <a href="https://www.incnut.com/"> IncNut Stylecraze Private Limited</a>. All rights reserved.</p>
+        <p>StyleCraze provides content of general nature that is designed for informational purposes only. The content is not intended to be a substitute for professional medical advice, diagnosis, or treatment. <a href="https://www.stylecraze.com/disclaimer/"> Click here for additional information</a></p>
+    </div>
+</body>
+
+</html>
