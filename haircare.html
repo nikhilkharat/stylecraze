@@ -6,412 +6,417 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hair Care</title>
     <style>
-            /* #head > div {
-        display: grid;
-        justify-content: center;
-        justify-items: center;
-        height: 50px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        overflow: hidden;
-        background-color: white;
-  position: fixed;
-  top: 0; 
-  width: 100%; 
-      } */
-        p{
-            text-align: center;
-            font-size: 30px;
-            font-family: sans-serif;
-            margin-top: 100px;
+        #head > div {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top: 0; 
+            width: 100%; 
         }
-        #main{
+        #container > div {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 40px;
+            font-family: sans-serif;  
+            /* font family added */
+        }
+        .line1{
+            width: 100px;
+            height: 3px;
+            background-color: rgb(247, 110, 133);
+            border: none;
+        }
+         #main{
             width: 90%;
             height: auto;
             margin: auto;
-        }
-        /* #makeupButton{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            row-gap: 10px;
-            column-gap: 5px;
-        } */
-        #makeupButton{
-            display: grid;
-            grid-template-columns: repeat(6,1fr);
-            grid-template-rows: repeat(2, auto);
-            gap:15px 15px ;
-           
-           
-            /* justify-content: space-between;
-            flex-wrap: wrap;
-            row-gap: 10px;
-            column-gap: 5px; */
-        }
-        
-        #makeupButton>button>a{
-            color: gray;
-            text-decoration: none;
-        }
-
-        #makeupButton>button{
-            padding: 20px 30px;
-          border-color: #ff5a78;
-          border-radius: 5px;
-          font-size: 15px;
-          background-color: white;
-          cursor: pointer;
-        }
-        #sideimg{
-            display: flex;
-            justify-content: space-between;
-        }
-        #sideimg>div:nth-child(1){
-          margin-top: 20px;
-        }
-        #sideimg>div:last-child{
-            width: 25%;
-        }
-
-        #sideimg>div:last-child>p:nth-child(1){
-  text-align: center;
-            font-family: sans-serif;
-            color: #333333;
-            font-size: 24px;
-            margin-top: 100%;
-        }
-        #sideimg>div:last-child>p:nth-child(1)>a{
-            text-align: center;
-            font-family: sans-serif;
-            color: #333333;
-            font-size: 24px;
-            margin-top: 100%;
-        }
-        #sideimg>div:last-child>p:nth-child(2){
-            text-align: center;
-            color: #333333;
-            font-family: sans-serif;
-            font-size: 18px;
-            margin: 0px 0px 10px;
-        }
-        #sideimg>div:last-child>p:last-child{
-            text-align: left;
-            color: gray;
-            font-family: sans-serif;
-            font-size: 12px;
-            margin-top: 80%;
-            font-weight: bolder;
-        }
-        #midimg{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            column-gap: 30px;
-        }
-        #midimg>div{
-            width: 400px;
-            height: 450px;
-            margin-top: 50px;
-        }
-        #midimg>div>img{
-            width: 400px;
-            height: 450px;
-        }
-        #midimg>div>p:nth-child(1)>a{
-            color: #333333;
-            font-family: sans-serif;
-            font-size: 24px;
-            text-align: center;
-        }
-        #midimg>div>p:last-child{
-            color:gray;
-            font-family: sans-serif;
-            font-size: 13px;
-            text-align: left;
-            font-weight: bolder;
-        }
-        #midimg>div>p:last-child>a{
-            color:gray;
-            font-family: sans-serif;
-            font-size: 13px;
-            text-align: left;
-           
-        }
-
-        #midimg2{
-            display: flex;
-            margin-top: 20%;
-            column-gap: 30px
-        }
-
-        #midimg2>div>p:nth-child(1){
-            text-align: center;
-            font-size: 24px;
-            font-family: sans-serif;
-            color: #333333;
-            margin-top: 50%;
-        }
-        #midimg2>div>p:nth-child(1)>a{
-            text-align: center;
-            font-size: 24px;
-            font-family: sans-serif;
-            color: #333333;
-            margin-top: 50%;
-        }
-        #midimg2>div>p:nth-child(2){
-            text-align: center;
-            font-size: 18px;
-            font-family: sans-serif;
-            color: #333333;
-         }
-        #midimg2>div>p:last-child{
-            text-align: left;
-            font-size: 13px;
-            font-family: sans-serif;
-            color:gray;
-            font-weight: bolder;
-            margin-top: 70%;
-        }
-        #lastimg{
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
-           column-gap: 30px;
-           margin-top: 50px;
-        }
-        #lastimg>div>img{
-            width: 400px;
-            height: 450px;
-        }
-        #lastimg>div>p>a{
-           color: #333333;
-           font-size: 24px;
-           font-family: sans-serif;
-           text-align: center;
-        }
-        #lastimg>div>p:last-child{
-            color: #333333;
-            font-size: 13px;
-            font-family: sans-serif;
-            text-align: left;
-            font-weight: bolder;
-        }
-        #lastimg>div>p:last-child>a{
-            color: #333333;
-            font-size: 13px;
-            font-family: sans-serif;
-            text-align: left;
             
         }
-
-        #lastimg2{
-            display: flex;
-           justify-content: space-between;
-           align-items: center;
-           column-gap: 30px;
-           margin-top: 50px;
+        #makeupButton{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            grid-template-rows: repeat(2,50px);
+            justify-content:space-around;
+            flex-wrap: wrap;
+            gap: 15px 20px;
+            
         }
-        #lastimg2>div>img{
-            width: 400px;
-            height: 450px;
+        #makeupButton>button{
+            border-color: #ff5a78;
+            border-radius: 5px;
+            background-color: white;
+            /* all properties added */
         }
-        #lastimg2>div>p>a{
-           color: #333333;
-           font-size: 24px;
-           font-family: sans-serif;
-           text-align: center;
-        }
-        #lastimg2>div>p:last-child{
-            color: #333333;
-            font-size: 13px;
+        #makeupButton>button>a{
+            
+            border-color: #ff5a78;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            color: gray;
             font-family: sans-serif;
-            text-align: left;
-            font-weight: bolder;
+            /* color-gray,font family adeed */
         }
-        #lastimg2>div>p:last-child>a{
-            color: #333333;
-            font-size: 13px;
+        #makeupButton>button:hover{
+        background-color: #ff5a78;
+        color: white;
+     }
+        #card1{
+            width: 90%;
+            /* width change 60 to 90 */
+            height: 500px;
+            border: 2px solid transparent;
+            margin: auto;
+            margin-top: 10px; 
+            display: grid; 
+            grid-template-columns: 60% 40%;
+            grid-template-rows: repeat(1, auto); 
+            background-color: #f9f9f9;
+            color: black;
+        }
+        #card1>img{
+            width: 100%;
+            height:500px;
+        }
+        #card1>div{
+            margin-top:125px;
+            padding: 10%;
+            text-align: center;
+        }
+        #card1>h3{
+            text-align: center;
+            
+        }
+        #card1>div>h3{
             font-family: sans-serif;
-            text-align: left;
-         
+          font-weight: lighter;
+          font-size: 20px;
+          /* all added */
         }
-     
+        #card1>div>p{
+            font-family: sans-serif;
+            line-height: 20px;
+            /* all added */
+        }
+        
+        #card2{
+            width: 90%;
+            /* width: 60 to 90 added; */
+            height: 300px;
+            margin: auto;
+            margin-top: 20px; 
+            display:flex; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto); 
+            justify-content: space-between; 
+            
+        }
+        #card2>div{
+            width: 30%;
+            height: 300px;
+            color: black;
+             
+            
+        }
+        #card2>div>p>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
+        }
+        #card2>div>p{
+            font-size: 12px;
+            /* all added */
+        }
+        #card2>div>img{
+            width: 100%;
+            height: 200px;
+        }
+        img~h4{
+            margin: auto;
+            text-align: center;
+            margin-top: 15px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* font-family: ; font-weight:  ADDED; */
+            
+                
+        }
+        h4~p{
+            padding: 10px;
+            font-size: 10px;
+            font-family: sans-serif;
+            /* font-family: ADDED; */
+        }
+        #card3{
+            width: 90%;
+            /* width: 60 TO 90 ADDED; */
+            height: 500px;
+            border: 2px solid transparent;
+            margin: auto;
+            margin-top: 10px; 
+            display: grid; 
+            grid-template-columns: 40% 60%;
+            grid-template-rows: repeat(1, auto); 
+            background-color: #f9f9f9;
+        }
+        
+        #card3>div{
+            margin-top:125px;
+            padding: 10%;
+            text-align: center;
+        }
+        #card3>div>h3{
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* all added */
+        }
+        #card3>div>p{
+            font-family: sans-serif;
+            /* all added */
+        }
+      
+        #card3>h3{
+            text-align: center;
+        }
+        #card3>img{
+            width: 100%;
+            height:500px;
+        }
+        #card4{
+            width: 90%;
+            /* WIDTH 60 TO 90 ADDED */
+            height: 300px;
+            
+            margin: auto;
+            margin-top: 20px; 
+            display:grid; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto); 
+            justify-content: space-between;   
+            gap: 20px;
 
+        }
+        #card4>div{
+            width: 100%;
+            height: 300px;
+        }
+        #card4>div>img{
+            width: 100%;
+            height: 200px;
+        }
+        #card4>div>p{
+            font-size: 12px;
+            /* all added */
+        }
+        #card4>div>p>a{
+          color: gray;
+          text-decoration: none; 
+           /* all added */ 
+        }
+        #footer{
+            margin: auto;
+            margin-top: 100px;
+            text-decoration: none;
+        }
         #footer>div>ul{
+            
             display: flex;
             column-gap: 10px;
             font-weight: bolder;
             text-align: center;
             font-family: sans-serif;
-            /* width: 40%; */
+            
             margin-top: 50px;
         }
-        #footer>div>ul>li>a{
-        font-size: 15px;
-        font-family: sans-serif;
-        color: gray;
+        #footer>div>ul>li{
+            margin: auto;
+            margin-top: 300px;
+            font-size: 15px;
+            font-family: sans-serif;
+            
+            
         }
-     #makeupButton>button:hover{
-        background-color: #ff5a78;
-        color: white;
-     }
-     #depth{
-        width: 100%;
-        height: 80px;
-     background-color: #e6e6e6;
-     margin-top: 20px;
-     }
-     #depth>p{
-        text-align: center;
-        font-size: 15px;
-     }
-     #depth>p>a{
-        text-align: center;
-        font-size: 15px;
-        color: #ff5a78;
-     }
-     #depth>p:last-child{
-        text-align: left;
-        font-size: 13px;
-        line-height: 18px;
-     } 
-     #depth>p:last-child>a{
-        color: #ff5a78;
-     } 
-     
-#nav{
-    display: flex;
-    justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 50px;
-    overflow: hidden;
-    top: 0 ;
-    width: 100%;
-    background-color: white;
-   position: fixed;
-}
+        #footer>div>ul>li>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
+        }
+        #depth{
+            width: 100%;
+            height: 80px;
+            margin: auto;
+            display: grid;
+            text-align: center;
+            align-content: center;
+            background-color: #e6e6e6;
+            margin-top: 20px;
+        }
+        #depth>p{
+            padding: inherit;
+            text-align: center;
+            font-size: 15px;
+            }
+        #depth>p>a{
+            text-align: center;
+            font-size: 15px;
+            color: #ff5a78;
+        }
+        #depth>p:last-child{
+            text-align: left;
+            font-size: 13px;
+            line-height: 18px;
+        } 
+        #depth>p:last-child>a{
+            color: #ff5a78;
+        } 
+        #depth>div>p:nth-child(1)>a{
+            color: #ff5a78;
+            /* all added */
+        }
+        #depth>div>p:last-child>a{
+            color: #ff5a78;
+           /* all added */
+        }
+        #depth>div>p{
+            font-family: sans-serif;
+            /* all added */
+        }
+        #depth>div>p:last-child{
+            font-size: 13px;
+               /* all added */
+        }
 
+        
+        
     </style>
 </head>
-<!-- <div id="head">
-    <div>
-      <img
-        src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png"
-        alt=""
-      />
-    </div> -->
-    <div id="nav">
-        <img src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png" alt="Error">
-    </div>
 <body>
-    <p>HAIR CARE</p>
-    <div id="main">
-        <div id="makeupButton">
-            <button><a href="https://www.stylecraze.com/articles/hair/dry-hair-care/">Dry Hair Care</a> </button>
-            <button><a href="https://www.stylecraze.com/articles/hair/hair-care-solutions/">Hair Care Solutions</a> </button>
-            <button><a href="https://www.stylecraze.com/articles/hair/dandruff/">Dandruff</a> </button>
-            <button><a href="https://www.stylecraze.com/articles/hair/hair-treatment-tips/">Hair Treatment</a>  </button>
-            <button><a href="https://www.stylecraze.com/articles/hair/basic-hair-care/">Basic Hair Care</a>  </button>
-            <button><a href="https://www.stylecraze.com/articles/hair/control-hair-fall-n-loss/">Hair Fall</a> </button>
-            <button><a href="https://www.stylecraze.com/articles/hair/hair-growth-tips-and-tricks/">Hair Growth</a> </button>
-            <button><a href="https://www.stylecraze.com/articles/hair/hair-colour/">Hair Color</a> </button>
-            <button><a href="https://www.stylecraze.com/articles/hair/hair-care-ideas/">Hair Care Ideas</a> </button>
+    <div id="head">
+        <div>
+          <img
+            src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png"
+            alt=""
+          />
         </div>
-        <div id="sideimg">
-            <div>
-                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/03/How-To-Make-Gray-Hair-Shine.jpg.webp" alt="Error">
+      </div>
+      <div id="container">
+        <div>HAIR CARE</div>
+        <hr class="line1" />
+      </div>
+    
+        <div id="main">
+            <div id="makeupButton">
+                <button><a href="https://www.stylecraze.com/articles/hair/dry-hair-care/">Dry Hair Care</a></button>
+                <button><a href="https://www.stylecraze.com/articles/hair/hair-care-solutions/">Hair Care Solutions</a></button>
+                <button><a href="https://www.stylecraze.com/articles/hair/dandruff/">Dandruff</a></button>
+                <button><a href="https://www.stylecraze.com/articles/hair/hair-treatment-tips/">Hair Treatment</a></button>
+                <button><a href="https://www.stylecraze.com/articles/hair/basic-hair-care/">Basic Hair Care</a></button>
+                <button><a href="https://www.stylecraze.com/articles/hair/control-hair-fall-n-loss/">Hair Fall</a></button>
+                <button><a href="https://www.stylecraze.com/articles/hair/hair-growth-tips-and-tricks/">Hair Growth</a></button>
+                <button><a href="https://www.stylecraze.com/articles/hair/hair-colour/">Hair Color</a></button>
+                <button><a href="https://www.stylecraze.com/articles/hair/hair-care-ideas/">Hair Care Ideas</a></button>
             </div>
+    </div>
+    <a href="https://www.stylecraze.com/articles/trichotillomania-hair-regrowth/" style="text-decoration: none;">
+        <div id="card1">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/08/Trichotillomania-Hair-Regrowth-And-Treatment-Banner.jpg.webp" />
             <div>
-                <p><a href="https://www.stylecraze.com/articles/how-to-make-gray-hair-shiny/"> How To Make Gray Hair Shine</a> </p>
-                <p>Gray hair is considered a sign of wisdom and maturity, and it rarely goes unnoticed. But dull and dry gray hair can grab attention for all the wrong reasons. So if you want to make your gray hair shine and […]</p>
-                <p>REVIEWED BY TIFFANY YOUNG, CERTIFIED TRICHOLOGY PRACTITIONER, CERTIFIED TRICHOLOGY PRACTITIONER</p>        
-            </div>
+                <h3>Trichotillomania Hair Regrowth And Treatment</h3>
+                <P>Some people struggle with the unusual urge to pull out their own hair. This is an impulse control disorder called trichotillomania, also known as the hair-pulling disorder. Here, we explain how to stimulate hair regrowth as you deal with trichotillomania. […]</P>
+            </div> 
         </div>
-        <div id="midimg">
-            <div>
-                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/03/Psoriasis-Hair-Loss-Causes-And-Treatment.jpg.webp" alt="Error">
-                <p><a href="https://www.stylecraze.com/articles/psoriasis-and-hair-loss/">Scalp Psoriasis Hair Loss: Causes, Treatment, And</a> </p>         
-                <p>MEDICALLY REVIEWED BY DR. SERGIO VAÑÓ GALVÁN, PHD, PHD </p>
-            </div>
-            <div>
-                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/02/How-To-Use-Nettle-To-Promote-Hair-Health.jpg.webp" alt="Error">
-                <p><a href="https://www.stylecraze.com/articles/nettle-for-hair/"> How To Use Nettle To Promote Hair Health</a></p>
-                <P><a href="https://www.stylecraze.com/author/swathihandoo/">BY SWATHI HANDU</a> </P>
-            </div>
-            <div>
-                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/02/How-Long-To-Keep-Henna-On-The-Hair-.jpg.webp" alt="Error">
-                <p><a href="https://www.stylecraze.com/articles/how-long-to-keep-henna-in-hair/"> How Long To Keep Henna On The Hair & The Right Way To Apply</a></p>
-                <P>REVIEWED BY GHANIMA ABDULLAH, COSMETOLOGIST, COSMETOLOGIST
-                </P>
-            </div>
+    </a>
+    
+    <div id="card2">
+        <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/how-to-detangle-hair/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/10/A-Simple-Guide-To-Untangling-Those-Messy-Knots.jpg.webp" />
+            <h4>How To Detangle Hair: Simple Tips For Different Hair Types</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/"> BY-DR SHRUTI CHAUHAN</a></p>
         </div>
-        <div id="midimg2">
-            <div>
-                <p><a href="https://www.stylecraze.com/articles/hair-shedding-vs-hair-loss/"> Hair Shedding Vs. Hair Loss: Know The Key Differences</a></p>
-                <p>Noticing more hair on your comb every day can be a cause for concern. While shedding 50 to 100 hair strands in a day is normal, anything beyond that may make you wonder if you have hair loss. But how […]</p>
-                <p>MEDICALLY REVIEWED BY DR. SONAM JESWANI RAMRAKHIANI, MBBS, DDV , MBBS, DDV </p>    
-            </div>
-            <div>
-                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/01/Differences-Between-Hair-Shedding-And-Hair-Loss-Banner.jpg.webp" alt="Error">
-            </div>
+        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/glycerin-for-hair/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/12/Glycerin-For-Hair-Benefits-How-To-Apply-And-Side-Effects-1.jpg.webp" />
+            <h4>Glycerin For Hair: Benefits, How To Apply, And Side Effects</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/"> BY-DR SHRUTI CHAUHAN</a> </p>
         </div>
-        <div id="lastimg">
-            <div>
-                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/01/Alopecia-Areata-Causes-Types-And-Treatment.jpg.webp" alt="Error">
-                <p><a href="https://www.stylecraze.com/articles/alopecia-hair-loss-treatment/"> Alopecia Areata Hair Loss – Causes, Symptoms, & Treatments</a></p>
-                <p>MEDICALLY REVIEWED BY DR. SHRUTI CHAVAN, MBBS, MBBS</p>
-            </div>
-            <div>
-                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2019/02/Brazilian-Blowout-Tutorial-For-Smooth-And-Silky-Hair.jpg.webp" alt="Error">
-                <p><a href="https://www.stylecraze.com/articles/everything-about-brazilian-blowout/">Brazilian Blowout Tutorial For Smooth And Silky Hair</a></p>
-                <p><a href="https://www.stylecraze.com/author/arshiya/">BY ARSHIYA SYEDA</a> </p>
-            </div>
-            <div>
-                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/12/How-Long-You-Should-Wait-To-Wash-Your-Hair-After-Coloring-It-Banner.jpg.webp" alt="Error">
-                <p><a href="https://www.stylecraze.com/articles/how-long-to-wait-to-wash-hair-after-coloring/"> How Long Should You Wait To Wash Your Hair After Coloring It?</a></p>
-                <p>REVIEWED BY MADISON DUFOUR, BARBER & COSMETOLOGIST, BARBER & COSMETOLOGIST </p>
-            </div>
+        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/coconut-oil-hair-masks/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/12/11-DIY-Coconut-Oil-Hair-Masks-To-Try-At-Home.jpg.webp" />
+            <h4>11 DIY Coconut Oil Hair Masks for All Hair Types: Benefits + Recipes</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-preethi-nagaraj/">BY DR PREETHI NAAGRAJ</a> </p>
         </div>
-          <div id="lastimg2">
-            <div>
-                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/12/Does-Gabapentin-Cause-Hair-Loss.jpg.webp" alt="Error">
-                <p><a title="25 Best Eye Makeup Tutorials"  href="https://www.stylecraze.com/articles/does-gabapentin-cause-hair-loss/">Does Gabapentin Cause Hair Loss?</a> </p>
-                <p>MEDICALLY REVIEWED BY DR. SHRUTI CHAVAN, MBBS, MBBS</p>
-            </div>
-            <div>
-                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/12/Everything-You-Need-To-Know-About-Permed-Hair-Banner.jpg.webp" alt="Error">
-                <p><a href="https://www.stylecraze.com/articles/how-to-perm-hair/"> How To Perm Your Hair: Everything You Need To Know</a></p>
-                <p><a href="https://www.stylecraze.com/author/arshiya/">BY ARSHIYA SYEDA</a> </p>
-            </div>
-            <div>
-                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/01/Is-Rosemary-Oil-Good-For-Hair.jpg.webp" alt="Error">
-                <p><a href="https://www.stylecraze.com/articles/rosemary-a-herbal-remedy-for-hair-growth/">Rosemary Oil For Hair Growth – How To Use It And Side Effects</a> </p>
-                <p>MEDICALLY REVIEWED BY DR. SHRUTI CHAVAN, MBBS, MBBS</p>
-            </div>
-            </div>
-
-            <div id="footer">
-                <div>
-                    <ul>
-                        <li><a href="https://www.stylecraze.com/about-us/">About Us</a></li>
-                        <li> <a href="https://www.stylecraze.com/advertise-with-us/"> Advertise With Us</a></li>
-                        <li><a href="https://www.stylecraze.com/image-usage-policy/"> Image Uses Policy</a></li>
-                        <li><a href="https://www.stylecraze.com/privacy-policy/">Privacy Policy</a> </li>
-                        <li><a href="https://www.stylecraze.com/contact-us/">Contact Us</a> </li>
-                        <li><a href="https://www.stylecraze.com/terms-of-use/">Terms of Use</a> </li>
-                        <li> <a href="https://www.stylecraze.com/editorial-guidelines/">Editorial Guidlines</a> </li>
-                        <li><a href="https://www.stylecraze.com/affiliate-disclosure/">Affiliate Disclosure</a> </li>
-                        <li><a href="https://www.stylecraze.com/doctors-join/">Join Our Medical Board</a> </li>
-                        <li><a href="https://www.stylecraze.com/cookie-policy/"> Cookie Policy</a></li>
-                        <li><a title="Press Room" href="https://www.stylecraze.com/press/"> Press Room</a></li>
-                    </ul>
-                </div>
-            </div>
+    </div>
+    <div id="card3" style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/scalp-problems/'" >
+        <div>
+            <h3>Scalp Problems – Causes, Symptoms, Types, & How To Take Care</h3>
+            <P>There should be more awareness about the common scalp problems we face. These issues may arise due to improper scalp health and maintenance. Some scalp disorders cause serious inflammation leading to hair loss. Once you understand these scalp conditions and […]</P>
+        </div>
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/03/Scalp-Problems-Types-Causes-Symptoms-and-Treatments.jpg.webp" />
+    </div>
+    <div id="card4">
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/ginger-help-in-hair-growth/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/11/Does-Ginger-Aid-Hair-Growth-Benefits-Uses-And-More-Banner.jpg.webp" />
+            <h4>Does Ginger Aid Hair Growth? Benefits, Uses, And More</h4>
+            <p><a href="https://www.stylecraze.com/author/arshiya/">BY ARSHIYA SYEDA</a> </p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/how-to-hydrate-hair-after-bleaching/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/11/How-To-Hydrate-Hair-After-Bleaching-The-Ultimate-Guide.jpg.webp" />
+            <h4>How To Hydrate Hair After Bleaching: The Ultimate Guide</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/">BY DR SHRUTI CHAUHAN</a> </p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/how-to-make-gray-hair-shiny/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/03/How-To-Make-Gray-Hair-Shine.jpg.webp" />
+            <h4>How To Make Gray Hair Shine</h4>
+            <p><a href="https://www.stylecraze.com/author/eshasaxena/"> BY ESHA SSAXENA</a></p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/psoriasis-and-hair-loss/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/03/Psoriasis-Hair-Loss-Causes-And-Treatment.jpg.webp" />
+            <h4>Scalp Psoriasis Hair Loss: Causes, Treatment, And</h4>
+            <p><a href="https://www.stylecraze.com/author/sushmita_2021/">BY SHUSHMITA BARMAN</a> </p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/nettle-for-hair/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/02/How-To-Use-Nettle-To-Promote-Hair-Health.jpg.webp" />
+            <h4>How To Use Nettle To Promote Hair Health</h4>
+            <p><a href="https://www.stylecraze.com/author/sushmita_2021/"> BY SHUSMITA BARMAN</a></p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/how-long-to-keep-henna-in-hair/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/02/How-Long-To-Keep-Henna-On-The-Hair-.jpg.webp" />
+            <h4>How Long To Keep Henna On The Hair & The Right Way To Apply</h4>
+            <p><a href="https://www.stylecraze.com/author/shaliniroy/">BY SHALINI ROY</a> </p>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <ul>
+                <li><a href="https://www.stylecraze.com/about-us/">About Us</a></li>
+                <li> <a href="https://www.stylecraze.com/advertise-with-us/"> Advertise With Us</a></li>
+                <li><a href="https://www.stylecraze.com/image-usage-policy/"> Image Uses Policy</a></li>
+                <li><a href="https://www.stylecraze.com/privacy-policy/">Privacy Policy</a> </li>
+                <li><a href="https://www.stylecraze.com/contact-us/">Contact Us</a> </li>
+                <li><a href="https://www.stylecraze.com/terms-of-use/">Terms of Use</a> </li>
+                <li> <a href="https://www.stylecraze.com/editorial-guidelines/">Editorial Guidlines</a> </li>
+                <li><a href="https://www.stylecraze.com/affiliate-disclosure/">Affiliate Disclosure</a> </li>
+                <li><a href="https://www.stylecraze.com/doctors-join/">Join Our Medical Board</a> </li>
+                <li><a href="https://www.stylecraze.com/cookie-policy/"> Cookie Policy</a></li>
+                <li><a title="Press Room" href="https://www.stylecraze.com/press/"> Press Room</a></li>
+            </ul>
+        </div>
     </div>
     <div id="depth">
+        <div>
         <p>Copyright © 2011 - 2022  <a href="https://www.incnut.com/"> IncNut Stylecraze Private Limited</a>. All rights reserved.</p>
-        <p>StyleCraze provides content of general nature that is designed for informational purposes only. The content is not intended to be a substitute for professional medical advice, diagnosis, or treatment. <a href="https://www.stylecraze.com/disclaimer/"> Click here for additional information</a></p>
+        <p>StyleCraze provides content of general nature that is designed for 
+            informational purposes only. The content is not intended to be a substitute 
+            for professional medical advice, diagnosis, or 
+            treatment. <a href="https://www.stylecraze.com/disclaimer/"> Click here for additional information</a></p>
+        </div>
+        
     </div>
-</body>
 
+
+    
+</body>
 </html>
