@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Up</title>
+    <style>
+        p{
+            text-align: center;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+        #main{
+            width: 90%;
+            height: auto;
+            margin: auto;
+        }
+        #makeupButton{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+        #makeupButton>button{
+            padding: 20px 30px;
+          border-color: #ff5a78;
+          border-radius: 5px;
+          font-size: 15px;
+          background-color: white;
+          cursor: pointer;
+        }
+        #sideimg{
+            display: flex;
+            justify-content: space-between;
+        }
+        #sideimg>div:nth-child(1){
+          margin-top: 20px;
+        }
+        #sideimg>div:last-child{
+            width: 25%;
+        }
+
+        #sideimg>div:last-child>p:nth-child(1){
+  text-align: center;
+            font-family: sans-serif;
+            color: #333333;
+            font-size: 24px;
+            margin-top: 100%;
+        }
+        #sideimg>div:last-child>p:nth-child(1)>a{
+            text-align: center;
+            font-family: sans-serif;
+            color: #333333;
+            font-size: 24px;
+            margin-top: 100%;
+        }
+        #sideimg>div:last-child>p:nth-child(2){
+            text-align: center;
+            color: #333333;
+            font-family: sans-serif;
+            font-size: 18px;
+            margin: 0px 0px 10px;
+        }
+        #sideimg>div:last-child>p:last-child>a{
+            text-align: left;
+            color: #333333;
+            font-family: sans-serif;
+            font-size: 10px;
+            margin-top: 80%;
+        }
+        #midimg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+        }
+        #midimg>div{
+            width: 400px;
+            height: 450px;
+            margin-top: 50px;
+        }
+        #midimg>div>img{
+            width: 400px;
+            height: 450px;
+        }
+        #midimg>div>p:nth-child(1)>a{
+            color: #333333;
+            font-family: sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        #midimg>div>p:last-child>a{
+            color: #333333;
+            font-family: sans-serif;
+            font-size: 10px;
+            text-align: left;
+        }
+        #midimg2{
+            display: flex;
+            margin-top: 20%;
+            column-gap: 30px
+        }
+
+        #midimg2>div>p:nth-child(1){
+            text-align: center;
+            font-size: 24px;
+            font-family: sans-serif;
+            color: #333333;
+            margin-top: 50%;
+        }
+        #midimg2>div>p:nth-child(1)>a{
+            text-align: center;
+            font-size: 24px;
+            font-family: sans-serif;
+            color: #333333;
+            margin-top: 50%;
+        }
+        #midimg2>div>p:nth-child(2){
+            text-align: center;
+            font-size: 18px;
+            font-family: sans-serif;
+            color: #333333;
+         }
+        #midimg2>div>p:last-child>a{
+            text-align: left;
+            font-size: 10px;
+            font-family: sans-serif;
+            color: #333333;
+        }
+        #lastimg{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           column-gap: 30px;
+           margin-top: 50px;
+        }
+        #lastimg>div>img{
+            width: 400px;
+            height: 450px;
+        }
+        #lastimg>div>p>a{
+           color: #333333;
+           font-size: 24px;
+           font-family: sans-serif;
+           text-align: center;
+        }
+        #lastimg>div>p:last-child>a{
+            color: #333333;
+            font-size: 10px;
+            font-family: sans-serif;
+            text-align: left;
+        }
+        #lastimg2{
+            display: flex;
+           justify-content: space-between;
+           align-items: center;
+           column-gap: 30px;
+           margin-top: 50px;
+        }
+        #lastimg2>div>img{
+            width: 400px;
+            height: 450px;
+        }
+        #lastimg2>div>p>a{
+           color: #333333;
+           font-size: 24px;
+           font-family: sans-serif;
+           text-align: center;
+        }
+        #lastimg2>div>p:last-child>a{
+            color: #333333;
+            font-size: 10px;
+            font-family: sans-serif;
+            text-align: left;
+        }
+        #footer>div>ul{
+            display: flex;
+            column-gap: 10px;
+            font-weight: bolder;
+            text-align: center;
+            font-family: sans-serif;
+            /* width: 40%; */
+            margin-top: 50px;
+        }
+        #footer>div>ul>li>a{
+        font-size: 15px;
+        font-family: sans-serif;
+        color: gray;
+        }
+     #makeupButton>button:hover{
+        background-color: #ff5a78;
+        color: white;
+     }
+     #depth{
+        width: 100%;
+        height: 80px;
+     background-color: #e6e6e6;
+     margin-top: 20px;
+     }
+     #depth>p{
+        text-align: center;
+        font-size: 15px;
+     }
+     #depth>p>a{
+        text-align: center;
+        font-size: 15px;
+        color: #ff5a78;
+     }
+     #depth>p:last-child{
+        text-align: left;
+        font-size: 13px;
+        line-height: 18px;
+     } 
+     #depth>p:last-child>a{
+        color: #ff5a78;
+     }   
+
+    </style>
+</head>
+<body>
+    <p>MAKE UP</p>
+    <div id="main">
+        <div id="makeupButton">
+            <button >Mehandi designs</button>
+            <button>Bridal Mekeup</button>
+            <button>Celebrity Mekeup</button>
+            <button>Nail Art</button>
+            <button>Makeup Idea </button>
+            <button>face Makeup</button>
+            <button>Lip Makeup</button>
+            <button>Eye Makeup</button>
+        </div>
+        <div id="sideimg">
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/10/How-To-Dry-Your-Nail-Polish-Faster-720x810.jpg.webp" alt="Error">
+            </div>
+            <div>
+                <p><a href="https://www.stylecraze.com/articles/how-to-dry-nail-polish-faster/"> 6 Best Way to Dry Your Nail Polish</a> </p>
+                <p>If you love painting your nails but hate waiting for your polish to dry, this article is for you. Let’s face it – there’s nothing more frustrating than going to bed with freshly painted nails and waking up to find […]</p>
+                <p><a href="https://www.stylecraze.com/author/eshasaxena/"> BY-ESHA SAXENA</a></p>        
+            </div>
+        </div>
+        <div id="midimg">
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2017/07/Top-50-Acrylic-Nail-Designs-2.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/best-acrylic-nail-art/">50 Top Acrylic Nail Designs and Idea For Women To Try</a> </p>         
+                <p><a href="https://www.stylecraze.com/author/shaliniroy/">BY SHALINI ROY</a> </p>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2015/07/5-Simple-Makeup-Tips-To-Cover-Varicose-Veins-Spider-Veins.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/makeup-tips-to-cover-varicose-veins-spider-veins/"> 5 Simple Makeup To Cover Vericose Veins (Spider Veins)</a></p>
+                <P><a href="https://www.stylecraze.com/author/baghadia/">BY NISHA BAGHADIA</a> </P>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2015/07/45-2-Best-Makeup-Ideas-For-Your-Gold-Dress-ss.jpg" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/best-makeup-ideas-for-your-gold-dress/"> 2 Best Makeup Idea For Your Gold Dress</a></p>
+                <P><a href="https://www.stylecraze.com/author/jyotsanarao/"> BY JYUTSANA RAO</a></P>
+            </div>
+        </div>
+        <div id="midimg2">
+            <div>
+                <p><a href="https://www.stylecraze.com/articles/amazing-ombre-nail-art-tutorial-with-detailed-steps-pictures/"> How To Do Ombre Nails Like A Pro: Tutorial With Pictures</a></p>
+                <p>Curious about how to do ombre nails? We have got you covered. The Instagram nail art videos are oddly satisfying and make you want those perfect nails. The ombre effect is quite a tricky artwork, and you may want the […]</p>
+                <p><a href="https://www.stylecraze.com/author/eshasaxena/">BY ESHA SAXENA</a> </p>    
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2014/02/How-To-Do-Ombre-Nails-Easily-At-Home-And-5-Design-Ideas.jpg.webp" alt="Error">
+            </div>
+        </div>
+        <div id="lastimg">
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2022/04/Amazing-Prom-Makeup-Ideas-And-Tips-To-Follow-In-2022.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/prom-makeup-ideas/"> Amazing Prom Makeup Ideas And Tips To Follow In 2022</a></p>
+                <p><a href="https://www.stylecraze.com/author/sushmita_2021/"> BY SHUSHMITA BARMAN</a></p>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/09/Black-Girl-Makeup-Tips-A-Z-Makeup-Ideas-For-Black-Girls-Explained.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/black-girl-makeup/"> Black Girl Makeup Idea For Different Occassions</a></p>
+                <p><a href="https://www.stylecraze.com/author/sushmita_2021/">BY SHUSHMITA BARMAN</a> </p>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/12/957-403149736-orginal.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/how-to-do-nail-art-at-home/"> 10 Best And Easy Nail Art Design To Try At Home in 2022</a></p>
+                <p><a href="https://www.stylecraze.com/author/shaliniroy/">BY SHALINI ROY</a> </p>
+            </div>
+        </div>
+          <div id="lastimg2">
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/09/25-Best-Eye-Makeup-Tutorials..jpg" alt="Error">
+                <p><a title="25 Best Eye Makeup Tutorials"  href="https://www.stylecraze.com/articles/eye-make-up-tutorials/">25 Best Eye Makeup Tutorials</a> </p>
+                <p><a href="https://www.stylecraze.com/author/eshasaxena/"> BY ESHA SAXENA</a></p>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/05/1656-50-Makeup-Tips-You-Have-To-Know-ss.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/101-make-up-tips-and-tricks/"> 50 Makeup Tips You Have To Know</a></p>
+                <p><a href="https://www.stylecraze.com/author/shaliniroy/">BY SHALINI ROY</a> </p>
+            </div>
+            <div>
+                <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/09/How-To-Apply-Bronzer.jpg.webp" alt="Error">
+                <p><a href="https://www.stylecraze.com/articles/how-to-apply-bronzer/">How To Apply Bronzer</a> </p>
+                <p><a href="https://www.stylecraze.com/author/eshasaxena/">BY ESHA SAXENA</a> </p>
+            </div>
+            </div>
+
+            <div id="footer">
+                <div>
+                    <ul>
+                        <li><a href="https://www.stylecraze.com/about-us/">About Us</a></li>
+                        <li> <a href="https://www.stylecraze.com/advertise-with-us/"> Advertise With Us</a></li>
+                        <li><a href="https://www.stylecraze.com/image-usage-policy/"> Image Uses Policy</a></li>
+                        <li><a href="https://www.stylecraze.com/privacy-policy/">Privacy Policy</a> </li>
+                        <li><a href="https://www.stylecraze.com/contact-us/">Contact Us</a> </li>
+                        <li><a href="https://www.stylecraze.com/terms-of-use/">Terms of Use</a> </li>
+                        <li> <a href="https://www.stylecraze.com/editorial-guidelines/">Editorial Guidlines</a> </li>
+                        <li><a href="https://www.stylecraze.com/affiliate-disclosure/">Affiliate Disclosure</a> </li>
+                        <li><a href="https://www.stylecraze.com/doctors-join/">Join Our Medical Board</a> </li>
+                        <li><a href="https://www.stylecraze.com/cookie-policy/"> Cookie Policy</a></li>
+                        <li><a title="Press Room" href="https://www.stylecraze.com/press/"> Press Room</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    <div id="depth">
+        <p>Copyright © 2011 - 2022  <a href="https://www.incnut.com/"> IncNut Stylecraze Private Limited</a>. All rights reserved.</p>
+        <p>StyleCraze provides content of general nature that is designed for informational purposes only. The content is not intended to be a substitute for professional medical advice, diagnosis, or treatment. <a href="https://www.stylecraze.com/disclaimer/"> Click here for additional information</a></p>
+    </div>
+</body>
+
+</html>
