@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skincare</title>
+    <style>
+        #head > div {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top: 0; 
+            width: 100%; 
+        }
+        #container > div {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 40px;
+        }
+        .line1{
+            width: 100px;
+            height: 3px;
+            background-color: rgb(247, 110, 133);
+            border: none;
+        }
+         #main{
+            width: 90%;
+            height: auto;
+            margin: auto;
+            
+        }
+        #makeupButton{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            grid-template-rows: repeat(2,50px);
+            justify-content:space-around;
+            flex-wrap: wrap;
+            gap: 15px 20px;
+            
+        }
+
+        #makeupButton>button>a{
+            
+            border-color: #ff5a78;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+        #makeupButton>button:hover{
+        background-color: #ff5a78;
+        color: white;
+     }
+        #card1{
+            width: 60%;
+            height: 500px;
+            border: 2px solid transparent;
+            margin: auto;
+            margin-top: 10px; 
+            display: grid; 
+            grid-template-columns: 60% 40%;
+            grid-template-rows: repeat(1, auto); 
+            background-color: #f9f9f9;
+            color: black;
+        }
+        #card1>img{
+            width: 100%;
+            height:500px;
+        }
+        #card1>div{
+            margin-top:125px;
+            padding: 10%;
+            text-align: center;
+        }
+        #card1>h3{
+            text-align: center;
+            
+        }
+        
+        #card2{
+            width: 60%;
+            height: 300px;
+            margin: auto;
+            margin-top: 20px; 
+            display:flex; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto); 
+            justify-content: space-between; 
+            
+        }
+        #card2>div{
+            width: 30%;
+            height: 300px;
+            color: black;
+             
+            
+        }
+        #card2>div>img{
+            width: 100%;
+            height: 200px;
+        }
+        img~h4{
+            margin: auto;
+            text-align: center;
+            margin-top: 15px;
+            
+                
+        }
+        h4~p{
+            padding: 10px;
+            font-size: 10px;
+        }
+        #card3{
+            width: 60%;
+            height: 500px;
+            border: 2px solid transparent;
+            margin: auto;
+            margin-top: 10px; 
+            display: grid; 
+            grid-template-columns: 40% 60%;
+            grid-template-rows: repeat(1, auto); 
+            background-color: #f9f9f9;
+        }
+        
+        #card3>div{
+            margin-top:125px;
+            padding: 10%;
+            text-align: center;
+        }
+        #card3>h3{
+            text-align: center;
+        }
+        #card3>img{
+            width: 100%;
+            height:500px;
+        }
+        #card4{
+            width: 60%;
+            height: 300px;
+            
+            margin: auto;
+            margin-top: 20px; 
+            display:grid; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto); 
+            justify-content: space-between;   
+            gap: 20px;
+
+        }
+        #card4>div{
+            width: 100%;
+            height: 300px;
+        }
+        #card4>div>img{
+            width: 100%;
+            height: 200px;
+            
+            
+        }
+        #footer{
+            margin: auto;
+            margin-top: 100px;
+            text-decoration: none;
+        }
+        #footer>div>ul{
+            
+            display: flex;
+            column-gap: 10px;
+            font-weight: bolder;
+            text-align: center;
+            font-family: sans-serif;
+            
+            margin-top: 50px;
+        }
+        #footer>div>ul>li{
+            margin: auto;
+            margin-top: 300px;
+            font-size: 15px;
+            font-family: sans-serif;
+            
+            
+        }
+        #depth{
+            width: 100%;
+            height: 80px;
+            margin: auto;
+            display: grid;
+            text-align: center;
+            align-content: center;
+            background-color: #e6e6e6;
+            margin-top: 20px;
+        }
+        #depth>p{
+            padding: inherit;
+            text-align: center;
+            font-size: 15px;
+            }
+        #depth>p>a{
+            text-align: center;
+            font-size: 15px;
+            color: #ff5a78;
+        }
+        #depth>p:last-child{
+            text-align: left;
+            font-size: 13px;
+            line-height: 18px;
+        } 
+        #depth>p:last-child>a{
+            color: #ff5a78;
+        } 
+        
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div>
+          <img
+            src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="container">
+        <div>SKIN CARE</div>
+        <hr class="line1" />
+      </div>
+    
+        <div id="main">
+            <div id="makeupButton">
+                <button><a href="https://www.stylecraze.com/articles/skin/">Sunscreen</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/anti-ageing/">Ageing</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/dry-skin/">Dry Skin</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/glowing-skin/">Glowing Skin</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/oily-skin/">Oily Skin</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/homemade-tips/">Homemade Tips</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/perfumes/">Perfumes</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/skin-care-problems/">Skin Care Problems</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/beauty-secrets/">Beuty Secrets</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/face-care-tips/">Face Care Tips</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/acne/">Acne</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/face-packs-n-masks/">Face Pack and Masks</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/">Skin Care Ideas</a></button>
+            </div>
+    </div>
+    <a href="https://www.stylecraze.com/articles/natural-ways-to-get-a-beautiful-skin/" style="text-decoration: none;">
+        <div id="card1">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/03/25-Easy-And-Effective-Ways-To-Get-Beautiful-Skin.jpg.webp" />
+            <div>
+                <h3>25 Easy and Effective Ways To Get Beutiful Skin</h3>
+                <P>While everyone dreams of having healthy and vibrant skin, 
+                    it may seem like a faraway dream to many. Hectic lifestyles, 
+                    sleep deprivation, environmental pollutants, 
+                    and changing seasons wreak havoc on our skin, making it dull, 
+                    lifeless, and prone to damage</P>
+            </div> 
+        </div>
+    </a>
+    
+    <div id="card2">
+        <div>
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/04/How-To-Get-Firmer-Skin.jpg.webp" />
+            <h4>How To Get Firmer Skin</h4>
+            <p>MEDICALLY REVIEWED BY DR. RINKY KAPOOR, MBBS, DDV, MD , MBBS, DDV, MD</p>
+        </div>
+        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/how-to-remove-dry-skin-from-feet-and-legs/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/06/How-To-Remove-Dead-Skin-From-Feet-Banner.jpg.webp" />
+            <h4>How To Remove Dead Skin From Feet</h4>
+            <p>By ANNIE JANGAM</p>
+        </div>
+        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/turmeric-face-packs-for-different-skin-types/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2014/01/Turmeric-Face-Pack-Benefits-And-How-To-Use.jpg.webp" />
+            <h4>Turmeric Face Pack:Benifits And How To Use</h4>
+            <p>By SUCHARITA MISHRA</p>
+        </div>
+    </div>
+    <div id="card3" style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/how-to-use-micellar-water/'" >
+        <div>
+            <h3>25 Easy and Effective Ways To Get Beutiful Skin</h3>
+            <P>Cleaning your makeup at the end of the day is important,
+                 but how do you ensure you have cleaned every bit of it? 
+                 Using micellar water has made the process much easier.
+                 If you are wondering how to use micellar</P>
+        </div>
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/09/What-Is-Micellar-Water-And-How-To-Use-It-Effectively-720x810.jpg.webp" />
+    </div>
+    <div id="card4">
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/best-diy-blackhead-removal-face-masks/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/08/10-Easy-DIY-Blackhead-Removal-Masks-You-Must-Try.jpg.webp" />
+            <h4>10 Easy DIY Blackhead Removal Masks You Must Try</h4>
+            <p>MEDICALLY REVIEWED BY DR. ZEEL GANDHI, BAMS, BAMS</p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/can-rosehip-oil-treat-acne/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2015/07/How-To-Use-Rosehip-Oil-For-Acne.jpg.webp" />
+            <h4>Rosedip Oil Foe Acne:Benifits, How To Use, And Side Effects</h4>
+            <p>By ARSHIYA SYEDA</p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/how-to-use-lemon-juice-for-acne-scars/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2015/07/Is-Lemon-Juice-Good-For-Acne-And-Acne-Scars.jpg.webp" />
+            <h4>Is Lemon Juice Good For Acne And Acne Scars</h4>
+            <p>MEDICALLY REVIEWED BY VD. BABITA SHARMA, BAMS, BAMS</p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/skin/page/4/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/08/Is-It-Okay-To-Get-Botox-If-You-Are-Pregnant.jpg.webp" />
+            <h4>Is It Okay To Get Botox If You Are Pregnant? Safe Alternatives</h4>
+            <p>MEDICALLY REVIEWED BY DR. VANDANA VERMA, MBBS, MD DVL, FIHR, MBBS, MD DVL, FIHR</p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/caprylyl-glycol-for-skin/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/09/Why-Is-Caprylyl-Glycol-Good-For-The-Skin.jpg.webp" />
+            <h4>Why Is Caprylyl Glycol Good For The Skin?</h4>
+            <p>BY SWATHI E</p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/ginseng-for-skin-benefits/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/09/Ginseng-For-Skin-Benefits-How-To-Use-And-Side-Effects.jpg.webp" />
+            <h4>Ginseng For Skin: Benefits, Ways To Use, And Side Effects</h4>
+            <p>BY ARSHIYA SYEDA</p>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <ul>
+                <li><a href="https://www.stylecraze.com/about-us/">About Us</a></li>
+                <li> <a href="https://www.stylecraze.com/advertise-with-us/"> Advertise With Us</a></li>
+                <li><a href="https://www.stylecraze.com/image-usage-policy/"> Image Uses Policy</a></li>
+                <li><a href="https://www.stylecraze.com/privacy-policy/">Privacy Policy</a> </li>
+                <li><a href="https://www.stylecraze.com/contact-us/">Contact Us</a> </li>
+                <li><a href="https://www.stylecraze.com/terms-of-use/">Terms of Use</a> </li>
+                <li> <a href="https://www.stylecraze.com/editorial-guidelines/">Editorial Guidlines</a> </li>
+                <li><a href="https://www.stylecraze.com/affiliate-disclosure/">Affiliate Disclosure</a> </li>
+                <li><a href="https://www.stylecraze.com/doctors-join/">Join Our Medical Board</a> </li>
+                <li><a href="https://www.stylecraze.com/cookie-policy/"> Cookie Policy</a></li>
+                <li><a title="Press Room" href="https://www.stylecraze.com/press/"> Press Room</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="depth">
+        <div>
+        <p>Copyright © 2011 - 2022  <a href="https://www.incnut.com/"> IncNut Stylecraze Private Limited</a>. All rights reserved.</p>
+        <p>StyleCraze provides content of general nature that is designed for 
+            informational purposes only. The content is not intended to be a substitute 
+            for professional medical advice, diagnosis, or 
+            treatment. <a href="https://www.stylecraze.com/disclaimer/"> Click here for additional information</a></p>
+        </div>
+        
+    </div>
+
+
+    
+</body>
+</html>
