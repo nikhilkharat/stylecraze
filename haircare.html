@@ -6,24 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hair Care</title>
     <style>
+            /* #head > div {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        height: 50px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        overflow: hidden;
+        background-color: white;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+      } */
         p{
             text-align: center;
             font-size: 30px;
             font-family: sans-serif;
+            margin-top: 100px;
         }
         #main{
             width: 90%;
             height: auto;
             margin: auto;
         }
-        #makeupButton{
+        /* #makeupButton{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             row-gap: 10px;
+            column-gap: 5px;
+        } */
+        #makeupButton{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(2, auto);
+            gap:15px 15px ;
+           
+           
+            /* justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            column-gap: 5px; */
         }
         
-
+        #makeupButton>button>a{
+            color: gray;
+            text-decoration: none;
+        }
 
         #makeupButton>button{
             padding: 20px 30px;
@@ -249,21 +278,44 @@
      #depth>p:last-child>a{
         color: #ff5a78;
      } 
+     
+#nav{
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 50px;
+    overflow: hidden;
+    top: 0 ;
+    width: 100%;
+    background-color: white;
+   position: fixed;
+}
 
     </style>
 </head>
+<!-- <div id="head">
+    <div>
+      <img
+        src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png"
+        alt=""
+      />
+    </div> -->
+    <div id="nav">
+        <img src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png" alt="Error">
+    </div>
 <body>
     <p>HAIR CARE</p>
     <div id="main">
         <div id="makeupButton">
-            <button >Dry Hair Care</button>
-            <button>Hair Care Solutions</button>
-            <button>Dandruff</button>
-            <button>Hair Treatment </button>
-            <button>Basic Hair Care </button>
-            <button>Hair Fall</button>
-            <button>Hair Growth</button>
-            <button>Hair Care Ideas</button>
+            <button><a href="https://www.stylecraze.com/articles/hair/dry-hair-care/">Dry Hair Care</a> </button>
+            <button><a href="https://www.stylecraze.com/articles/hair/hair-care-solutions/">Hair Care Solutions</a> </button>
+            <button><a href="https://www.stylecraze.com/articles/hair/dandruff/">Dandruff</a> </button>
+            <button><a href="https://www.stylecraze.com/articles/hair/hair-treatment-tips/">Hair Treatment</a>  </button>
+            <button><a href="https://www.stylecraze.com/articles/hair/basic-hair-care/">Basic Hair Care</a>  </button>
+            <button><a href="https://www.stylecraze.com/articles/hair/control-hair-fall-n-loss/">Hair Fall</a> </button>
+            <button><a href="https://www.stylecraze.com/articles/hair/hair-growth-tips-and-tricks/">Hair Growth</a> </button>
+            <button><a href="https://www.stylecraze.com/articles/hair/hair-colour/">Hair Color</a> </button>
+            <button><a href="https://www.stylecraze.com/articles/hair/hair-care-ideas/">Hair Care Ideas</a> </button>
         </div>
         <div id="sideimg">
             <div>
