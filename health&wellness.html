@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Wellness</title>
+    <style>
+        #head > div {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top: 0; 
+            width: 100%; 
+        }
+        #container > div {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 40px;
+            font-family: sans-serif;  
+            /* font family added */
+        }
+        .line1{
+            width: 100px;
+            height: 3px;
+            background-color: rgb(247, 110, 133);
+            border: none;
+        }
+         #main{
+            width: 90%;
+            height: auto;
+            margin: auto;
+            
+        }
+        #makeupButton{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            grid-template-rows: repeat(2,50px);
+            justify-content:space-around;
+            flex-wrap: wrap;
+            gap: 15px 20px;
+            
+        }
+        #makeupButton>button{
+            border-color: #ff5a78;
+            border-radius: 5px;
+            background-color: white;
+            /* all properties added */
+        }
+        #makeupButton>button>a{
+            
+            border-color: #ff5a78;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            color: gray;
+            font-family: sans-serif;
+            /* color-gray,font family adeed */
+        }
+        #makeupButton>button:hover{
+        background-color: #ff5a78;
+        color: white;
+     }
+        #card1{
+            width: 90%;
+            /* width change 60 to 90 */
+            height: 500px;
+            border: 2px solid transparent;
+            margin: auto;
+            margin-top: 10px; 
+            display: grid; 
+            grid-template-columns: 60% 40%;
+            grid-template-rows: repeat(1, auto); 
+            background-color: #f9f9f9;
+            color: black;
+        }
+        #card1>img{
+            width: 100%;
+            height:500px;
+        }
+        #card1>div{
+            margin-top:125px;
+            padding: 10%;
+            text-align: center;
+        }
+        #card1>h3{
+            text-align: center;
+            
+        }
+        #card1>div>h3{
+            font-family: sans-serif;
+          font-weight: lighter;
+          font-size: 20px;
+          /* all added */
+        }
+        #card1>div>p{
+            font-family: sans-serif;
+            line-height: 20px;
+            /* all added */
+        }
+        
+        #card2{
+            width: 90%;
+            /* width: 60 to 90 added; */
+            height: 300px;
+            margin: auto;
+            margin-top: 20px; 
+            display:flex; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto); 
+            justify-content: space-between; 
+            
+        }
+        #card2>div{
+            width: 30%;
+            height: 300px;
+            color: black;
+             
+            
+        }
+        #card2>div>p>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
+        }
+        #card2>div>p{
+            font-size: 12px;
+            /* all added */
+        }
+        #card2>div>img{
+            width: 100%;
+            height: 200px;
+        }
+        img~h4{
+            margin: auto;
+            text-align: center;
+            margin-top: 15px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* font-family: ; font-weight:  ADDED; */
+            
+                
+        }
+        h4~p{
+            padding: 10px;
+            font-size: 10px;
+            font-family: sans-serif;
+            /* font-family: ADDED; */
+        }
+        #card3{
+            width: 90%;
+            /* width: 60 TO 90 ADDED; */
+            height: 500px;
+            border: 2px solid transparent;
+            margin: auto;
+            margin-top: 10px; 
+            display: grid; 
+            grid-template-columns: 40% 60%;
+            grid-template-rows: repeat(1, auto); 
+            background-color: #f9f9f9;
+        }
+        
+        #card3>div{
+            margin-top:125px;
+            padding: 10%;
+            text-align: center;
+        }
+        #card3>div>h3{
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* all added */
+        }
+        #card3>div>p{
+            font-family: sans-serif;
+            /* all added */
+        }
+      
+        #card3>h3{
+            text-align: center;
+        }
+        #card3>img{
+            width: 100%;
+            height:500px;
+        }
+        #card4{
+            width: 90%;
+            /* WIDTH 60 TO 90 ADDED */
+            height: 300px;
+            
+            margin: auto;
+            margin-top: 20px; 
+            display:grid; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto); 
+            justify-content: space-between;   
+            gap: 20px;
+
+        }
+        #card4>div{
+            width: 100%;
+            height: 300px;
+        }
+        #card4>div>img{
+            width: 100%;
+            height: 200px;
+        }
+        #card4>div>p{
+            font-size: 12px;
+            /* all added */
+        }
+        #card4>div>p>a{
+          color: gray;
+          text-decoration: none; 
+           /* all added */ 
+        }
+        #footer{
+            margin: auto;
+            margin-top: 100px;
+            text-decoration: none;
+        }
+        #footer>div>ul{
+            
+            display: flex;
+            column-gap: 10px;
+            font-weight: bolder;
+            text-align: center;
+            font-family: sans-serif;
+            
+            margin-top: 50px;
+        }
+        #footer>div>ul>li{
+            margin: auto;
+            margin-top: 300px;
+            font-size: 15px;
+            font-family: sans-serif;
+            
+            
+        }
+        #footer>div>ul>li>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
+        }
+        #depth{
+            width: 100%;
+            height: 80px;
+            margin: auto;
+            display: grid;
+            text-align: center;
+            align-content: center;
+            background-color: #e6e6e6;
+            margin-top: 20px;
+        }
+        #depth>p{
+            padding: inherit;
+            text-align: center;
+            font-size: 15px;
+            }
+        #depth>p>a{
+            text-align: center;
+            font-size: 15px;
+            color: #ff5a78;
+        }
+        #depth>p:last-child{
+            text-align: left;
+            font-size: 13px;
+            line-height: 18px;
+        } 
+        #depth>p:last-child>a{
+            color: #ff5a78;
+        } 
+        #depth>div>p:nth-child(1)>a{
+            color: #ff5a78;
+            /* all added */
+        }
+        #depth>div>p:last-child>a{
+            color: #ff5a78;
+           /* all added */
+        }
+        #depth>div>p{
+            font-family: sans-serif;
+            /* all added */
+        }
+        #depth>div>p:last-child{
+            font-size: 13px;
+               /* all added */
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div>
+          <img
+            src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="container">
+        <div>HEALTH & WELLNESS</div>
+        <hr class="line1" />
+      </div>
+    
+        <div id="main">
+            <div id="makeupButton">
+                <button><a href="https://www.stylecraze.com/articles/health-and-wellness/health-conditions-and-diseases/">Health Conditions & Diaeseas</a></button>
+                <button><a href="https://www.stylecraze.com/articles/health-and-wellness/ayurveda/">Aurveda</a></button>
+                <button><a href="https://www.stylecraze.com/articles/health-and-wellness/weight-gain/">Weight Gain</a></button>
+                <button><a href="https://www.stylecraze.com/articles/health-and-wellness/nutrition/">Nutrition</a></button>
+                <button><a href="https://www.stylecraze.com/articles/health-and-wellness/healthy-food/">Healthy Food</a></button>
+                <button><a href="https://www.stylecraze.com/articles/health-and-wellness/diet-tips/">Diet Tips</a></button>
+                <button><a href="https://www.stylecraze.com/articles/health-and-wellness/yoga/">Yoga</a></button>
+                <button><a href="https://www.stylecraze.com/articles/health-and-wellness/weight-loss/">Weight Loss</a></button>
+                <button><a href="https://www.stylecraze.com/articles/health-and-wellness/home-remedies-tips/">Home Remedies</a></button>
+                <button><a href="https://www.stylecraze.com/articles/health-and-wellness/ingredients-and-uses/">Ingredients</a></button>
+            </div>
+    </div>
+    <a href="https://www.stylecraze.com/articles/blood-orange/" style="text-decoration: none;">
+        <div id="card1">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/12/6-Amazing-Health-Benefits-Of-Blood-Orange.jpg.webp" />
+            <div>
+                <h3>6 Amazing Health Benefits Of Blood Orange</h3>
+                <P>Widely known for its unique color among the citrus fruits is the blood orange. These delicious oranges have deep reddish flesh due to a polyphenolic compound called anthocyanin. Blood orange nutrition has gained the attention of many health enthusiasts. The […]</P>
+            </div> 
+        </div>
+    </a>
+    
+    <div id="card2">
+        <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/glucerna/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/12/Glucerna-The-Diabetes-friendly-Health-Drink-Banner.jpg.webp" />
+            <h4>Glucerna For Diabetes: How It Works And Nutritional Facts</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/"> BY-DR SHRUTI CHAUHAN</a></p>
+        </div>
+        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/yellow-squash/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/12/Yellow-Squash-Nutrition-Facts-Health-Benefits-Recipes-And-More-Banner.jpg.webp" />
+            <h4>Benefits Of Yellow Squash, Nutrition Facts, Recipes, & Storage</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/"> BY-DR SHRUTI CHAUHAN</a> </p>
+        </div>
+        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/linden-tea/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/12/Linden-Tea-Health-Benefits-Preparation-And-Precautions-Banner.jpg.webp" />
+            <h4>6 Benefits Of Linden Tea, How To Prepare It, & Side Effects</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-preethi-nagaraj/">BY DR PREETHI NAAGRAJ</a> </p>
+        </div>
+    </div>
+    <div id="card3" style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/vitamins-for-weight-loss/'" >
+        <div>
+            <h3>Vitamins For Weight Loss, Precautions, And Tips</h3>
+            <P>It is because vitamin deficiency may affect metabolic processes and the body’s ability to shed fat, so you need to take enough vitamins for weight loss (1), (2). The solution – either consume vitamin-rich foods or take supplements to cover […]</P>
+        </div>
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/12/Pick-Up-These-Vitamins-If-You-Are-Serious-About-Weight-Loss.jpg.webp" />
+    </div>
+    <div id="card4">
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/tempeh-benefits/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/12/Tempeh.jpg.webp" />
+            <h4>Tempeh Benefits, Nutrition, Recipes, And More</h4>
+            <p><a href="https://www.stylecraze.com/author/arshiya/">BY ARSHIYA SYEDA</a> </p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/how-to-get-rid-of-period-bloating/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/12/How-To-Get-Rid-Of-Period-Bloating-Home-Remedies-You-Can-Try.jpg.webp" />
+            <h4>How To Get Rid Of Period Bloating: Home Remedies You Can Try</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/">BY DR SHRUTI CHAUHAN</a> </p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/what-are-sunchokes/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/12/Sunchoke.jpg.webp" />
+            <h4>Sunchoke: Nutrition, Benefits, And Preparations</h4>
+            <p><a href="https://www.stylecraze.com/author/eshasaxena/"> BY ESHA SSAXENA</a></p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/psoriasis-and-hair-loss/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/12/Benefits-Of-Turkey-Tail-Mushrooms-And-How-To-Add-Them-To-Your-Diet.jpg" />
+            <h4>6 Benefits Of Turkey Tail Mushrooms & Possible Side Effects</h4>
+            <p><a href="https://www.stylecraze.com/author/sushmita_2021/">BY SHUSHMITA BARMAN</a> </p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/nettle-for-hair/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/12/Is-Liquid-Collagen-Good-For-Consumption.jpg.webp" />
+            <h4>6 Benefits Of Liquid Collagen, Types, And Side Effects</h4>
+            <p><a href="https://www.stylecraze.com/author/sushmita_2021/"> BY SHUSMITA BARMAN</a></p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/is-sucralose-bad-for-you/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/12/What-Is-Sucralose-Is-It-Good-Or-Bad-For-You.jpg.webp" />
+            <h4></h4>Is Sucralose Bad For You? Pros And Side Effects To Know</h4>
+            <p><a href="https://www.stylecraze.com/author/shaliniroy/">BY SHALINI ROY</a> </p>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <ul>
+                <li><a href="https://www.stylecraze.com/about-us/">About Us</a></li>
+                <li> <a href="https://www.stylecraze.com/advertise-with-us/"> Advertise With Us</a></li>
+                <li><a href="https://www.stylecraze.com/image-usage-policy/"> Image Uses Policy</a></li>
+                <li><a href="https://www.stylecraze.com/privacy-policy/">Privacy Policy</a> </li>
+                <li><a href="https://www.stylecraze.com/contact-us/">Contact Us</a> </li>
+                <li><a href="https://www.stylecraze.com/terms-of-use/">Terms of Use</a> </li>
+                <li> <a href="https://www.stylecraze.com/editorial-guidelines/">Editorial Guidlines</a> </li>
+                <li><a href="https://www.stylecraze.com/affiliate-disclosure/">Affiliate Disclosure</a> </li>
+                <li><a href="https://www.stylecraze.com/doctors-join/">Join Our Medical Board</a> </li>
+                <li><a href="https://www.stylecraze.com/cookie-policy/"> Cookie Policy</a></li>
+                <li><a title="Press Room" href="https://www.stylecraze.com/press/"> Press Room</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="depth">
+        <div>
+        <p>Copyright © 2011 - 2022  <a href="https://www.incnut.com/"> IncNut Stylecraze Private Limited</a>. All rights reserved.</p>
+        <p>StyleCraze provides content of general nature that is designed for 
+            informational purposes only. The content is not intended to be a substitute 
+            for professional medical advice, diagnosis, or 
+            treatment. <a href="https://www.stylecraze.com/disclaimer/"> Click here for additional information</a></p>
+        </div>
+        
+    </div>
+
+
+    
+</body>
+</html>
