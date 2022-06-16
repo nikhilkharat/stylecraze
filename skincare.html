@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>skincare</title>
+    <title>Skin Care</title>
     <style>
         #head > div {
             display: grid;
@@ -22,6 +22,8 @@
             text-align: center;
             margin-top: 60px;
             font-size: 40px;
+            font-family: sans-serif;  
+            /* font family added */
         }
         .line1{
             width: 100px;
@@ -30,11 +32,9 @@
             border: none;
         }
          #main{
-            width: 60%;
+            width: 90%;
             height: auto;
             margin: auto;
-            margin-top: 30px;
-            
             
         }
         #makeupButton{
@@ -42,27 +42,33 @@
             grid-template-columns: repeat(7,1fr);
             grid-template-rows: repeat(2,50px);
             justify-content:space-around;
-
             flex-wrap: wrap;
             gap: 15px 20px;
             
         }
-
+        #makeupButton>button{
+            border-color: #ff5a78;
+            border-radius: 5px;
+            background-color: white;
+            /* all properties added */
+        }
         #makeupButton>button>a{
             
             border-color: #ff5a78;
-            border-radius: 5px;
             font-size: 15px;
             cursor: pointer;
             text-decoration: none;
-            color: black;
+            color: gray;
+            font-family: sans-serif;
+            /* color-gray,font family adeed */
         }
         #makeupButton>button:hover{
         background-color: #ff5a78;
         color: white;
      }
         #card1{
-            width: 60%;
+            width: 90%;
+            /* width change 60 to 90 */
             height: 500px;
             border: 2px solid transparent;
             margin: auto;
@@ -86,9 +92,21 @@
             text-align: center;
             
         }
+        #card1>div>h3{
+            font-family: sans-serif;
+          font-weight: lighter;
+          font-size: 20px;
+          /* all added */
+        }
+        #card1>div>p{
+            font-family: sans-serif;
+            line-height: 20px;
+            /* all added */
+        }
         
         #card2{
-            width: 60%;
+            width: 90%;
+            /* width: 60 to 90 added; */
             height: 300px;
             margin: auto;
             margin-top: 20px; 
@@ -105,6 +123,15 @@
              
             
         }
+        #card2>div>p>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
+        }
+        #card2>div>p{
+            font-size: 12px;
+            /* all added */
+        }
         #card2>div>img{
             width: 100%;
             height: 200px;
@@ -113,15 +140,21 @@
             margin: auto;
             text-align: center;
             margin-top: 15px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* font-family: ; font-weight:  ADDED; */
             
                 
         }
         h4~p{
             padding: 10px;
             font-size: 10px;
+            font-family: sans-serif;
+            /* font-family: ADDED; */
         }
         #card3{
-            width: 60%;
+            width: 90%;
+            /* width: 60 TO 90 ADDED; */
             height: 500px;
             border: 2px solid transparent;
             margin: auto;
@@ -137,6 +170,16 @@
             padding: 10%;
             text-align: center;
         }
+        #card3>div>h3{
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* all added */
+        }
+        #card3>div>p{
+            font-family: sans-serif;
+            /* all added */
+        }
+      
         #card3>h3{
             text-align: center;
         }
@@ -145,7 +188,8 @@
             height:500px;
         }
         #card4{
-            width: 60%;
+            width: 90%;
+            /* WIDTH 60 TO 90 ADDED */
             height: 300px;
             
             margin: auto;
@@ -164,8 +208,15 @@
         #card4>div>img{
             width: 100%;
             height: 200px;
-            
-            
+        }
+        #card4>div>p{
+            font-size: 12px;
+            /* all added */
+        }
+        #card4>div>p>a{
+          color: gray;
+          text-decoration: none; 
+           /* all added */ 
         }
         #footer{
             margin: auto;
@@ -189,6 +240,11 @@
             font-family: sans-serif;
             
             
+        }
+        #footer>div>ul>li>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
         }
         #depth{
             width: 100%;
@@ -218,8 +274,22 @@
         #depth>p:last-child>a{
             color: #ff5a78;
         } 
-        
-
+        #depth>div>p:nth-child(1)>a{
+            color: #ff5a78;
+            /* all added */
+        }
+        #depth>div>p:last-child>a{
+            color: #ff5a78;
+           /* all added */
+        }
+        #depth>div>p{
+            font-family: sans-serif;
+            /* all added */
+        }
+        #depth>div>p:last-child{
+            font-size: 13px;
+               /* all added */
+        }
 
         
         
@@ -241,92 +311,85 @@
     
         <div id="main">
             <div id="makeupButton">
-                <button><a href="https://www.stylecraze.com/articles/skin/">Sunscreen</a></button>
-                <button><a href="https://www.stylecraze.com/articles/skin/anti-ageing/">Ageing</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/sunscreen-tips/">Sun Screen</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/anti-ageing/">Anti Ageing</a></button>
                 <button><a href="https://www.stylecraze.com/articles/skin/dry-skin/">Dry Skin</a></button>
                 <button><a href="https://www.stylecraze.com/articles/skin/glowing-skin/">Glowing Skin</a></button>
                 <button><a href="https://www.stylecraze.com/articles/skin/oily-skin/">Oily Skin</a></button>
                 <button><a href="https://www.stylecraze.com/articles/skin/homemade-tips/">Homemade Tips</a></button>
                 <button><a href="https://www.stylecraze.com/articles/skin/perfumes/">Perfumes</a></button>
                 <button><a href="https://www.stylecraze.com/articles/skin/skin-care-problems/">Skin Care Problems</a></button>
-                <button><a href="https://www.stylecraze.com/articles/skin/beauty-secrets/">Beuty Secrets</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/beauty-secrets/">Beauty Secrets</a></button>
                 <button><a href="https://www.stylecraze.com/articles/skin/face-care-tips/">Face Care Tips</a></button>
                 <button><a href="https://www.stylecraze.com/articles/skin/acne/">Acne</a></button>
-                <button><a href="https://www.stylecraze.com/articles/skin/face-packs-n-masks/">Face Pack and Masks</a></button>
-                <button><a href="https://www.stylecraze.com/articles/skin/">Skin Care Ideas</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/face-packs-n-masks/">Face Packs And Masks</a></button>
+                <button><a href="https://www.stylecraze.com/articles/skin/skin-care-ideas/">Skin Care Ideas</a></button>
             </div>
     </div>
-    <a href="https://www.stylecraze.com/articles/natural-ways-to-get-a-beautiful-skin/" style="text-decoration: none;">
+    <a href="https://www.stylecraze.com/articles/anti-aging-treatments/" style="text-decoration: none;">
         <div id="card1">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/03/25-Easy-And-Effective-Ways-To-Get-Beautiful-Skin.jpg.webp" />
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/07/Top-9-Anti-aging-Treatments-To-Get-Clear-And-Youthful-Skin.jpg.webp" />
             <div>
-                <h3>25 Easy and Effective Ways To Get Beutiful Skin</h3>
-                <P>While everyone dreams of having healthy and vibrant skin, 
-                    it may seem like a faraway dream to many. Hectic lifestyles, 
-                    sleep deprivation, environmental pollutants, 
-                    and changing seasons wreak havoc on our skin, making it dull, 
-                    lifeless, and prone to damage</P>
+                <h3>9 Most Common Anti-Aging Treatments To Get Younger Skin</h3>
+                <P>With age come several skin-related issues, starting from wrinkles to depressed cheekbones. However, anti-aging treatments, such as laser resurfacing, stem cell facelift, and chemical peels, can work wonders in slowing down these aging symptoms and help you get a youthful […]</P>
             </div> 
         </div>
     </a>
     
     <div id="card2">
-        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/firmness-skin/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/04/How-To-Get-Firmer-Skin.jpg.webp" />
-            <h4>How To Get Firmer Skin</h4>
-            <p>MEDICALLY REVIEWED BY DR. RINKY KAPOOR, MBBS, DDV, MD , MBBS, DDV, MD</p>
+        <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/hydrogen-peroxide-for-skin/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/07/How-To-Use-Hydrogen-Peroxide-For-Skin-All-You-Need-To-Know.jpg.webp" />
+            <h4>Hydrogen Peroxide For Skin: Benefits And How To Use It</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/"> BY-DR SHRUTI CHAUHAN</a></p>
         </div>
-        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/how-to-remove-dry-skin-from-feet-and-legs/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/06/How-To-Remove-Dead-Skin-From-Feet-Banner.jpg.webp" />
-            <h4>How To Remove Dead Skin From Feet</h4>
-            <p>By ANNIE JANGAM</p>
+        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/simple-steps-to-do-a-facial-massage-at-home/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2014/07/974_512776246.jpg.webp" />
+            <h4>7 Simple Steps To Give Yourself A Facial Massage At Home</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/"> BY-DR SHRUTI CHAUHAN</a> </p>
         </div>
-        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/turmeric-face-packs-for-different-skin-types/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2014/01/Turmeric-Face-Pack-Benefits-And-How-To-Use.jpg.webp" />
-            <h4>Turmeric Face Pack:Benifits And How To Use</h4>
-            <p>By SUCHARITA MISHRA</p>
+        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/tamarind-benefits-and-6-face-packs/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/02/10-Effective-Ways-To-Use-Tamarind-For-Skin-Care.jpg.webp" />
+            <h4>10 Effective Ways To Use Tamarind For Skin Care</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-preethi-nagaraj/">BY DR PREETHI NAAGRAJ</a> </p>
         </div>
     </div>
-    <div id="card3" style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/how-to-use-micellar-water/'" >
+    <div id="card3" style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/simple-ways-to-make-pomegranate-face-mask-at-home/'" >
         <div>
-            <h3>25 Easy and Effective Ways To Get Beutiful Skin</h3>
-            <P>Cleaning your makeup at the end of the day is important,
-                 but how do you ensure you have cleaned every bit of it? 
-                 Using micellar water has made the process much easier.
-                 If you are wondering how to use micellar</P>
+            <h3>11 Must-Try Easy Homemade Pomegranate Face Packs</h3>
+            <P>Pomegranate is considered a superfood and has immense health benefits. However, do you know that it can also keep your skin healthy? You can use DIY pomegranate face masks to get glowing and healthy skin. They can keep your skin […]</P>
         </div>
-        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/09/What-Is-Micellar-Water-And-How-To-Use-It-Effectively-720x810.jpg.webp" />
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2015/06/11-Must-Try-Easy-Homemade-Pomegranate-Face-Packs-720x810.jpg.webp" />
     </div>
     <div id="card4">
-        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/best-diy-blackhead-removal-face-masks/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/08/10-Easy-DIY-Blackhead-Removal-Masks-You-Must-Try.jpg.webp" />
-            <h4>10 Easy DIY Blackhead Removal Masks You Must Try</h4>
-            <p>MEDICALLY REVIEWED BY DR. ZEEL GANDHI, BAMS, BAMS</p>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/effective-homemade-moisturizers-for-dry-skin/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/12/10-Simple-Homemade-Moisturizers-For-Dry-Skin.jpg.webp" />
+            <h4>10 Simple Homemade Moisturizers For Dry Skin</h4>
+            <p><a href="https://www.stylecraze.com/author/arshiya/">BY ARSHIYA SYEDA</a> </p>
         </div>
-        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/can-rosehip-oil-treat-acne/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2015/07/How-To-Use-Rosehip-Oil-For-Acne.jpg.webp" />
-            <h4>Rosedip Oil Foe Acne:Benifits, How To Use, And Side Effects</h4>
-            <p>By ARSHIYA SYEDA</p>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/things-to-consider-when-choosing-a-sunscreen/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/12/How-To-Choose-Sunscreen.jpg.webp" />
+            <h4>How To Choose Sunscreen</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/">BY DR SHRUTI CHAUHAN</a> </p>
         </div>
-        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/how-to-use-lemon-juice-for-acne-scars/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2015/07/Is-Lemon-Juice-Good-For-Acne-And-Acne-Scars.jpg.webp" />
-            <h4>Is Lemon Juice Good For Acne And Acne Scars</h4>
-            <p>MEDICALLY REVIEWED BY VD. BABITA SHARMA, BAMS, BAMS</p>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/aloe-vera-help-in-treating-acne-pimples/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/12/Aloe-Vera-For-Acne-9-Ways-To-Use-Aloe-Vera-For-Acne-And-Pimples.jpg.webp" />
+            <h4>How To Make Gray Hair Shine</h4>
+            <p><a href="https://www.stylecraze.com/author/eshasaxena/"> BY ESHA SSAXENA</a></p>
         </div>
-        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/skin/page/4/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/08/Is-It-Okay-To-Get-Botox-If-You-Are-Pregnant.jpg.webp" />
-            <h4>Is It Okay To Get Botox If You Are Pregnant? Safe Alternatives</h4>
-            <p>MEDICALLY REVIEWED BY DR. VANDANA VERMA, MBBS, MD DVL, FIHR, MBBS, MD DVL, FIHR</p>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/psoriasis-and-hair-loss/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/03/Psoriasis-Hair-Loss-Causes-And-Treatment.jpg.webp" />
+            <h4>Scalp Psoriasis Hair Loss: Causes, Treatment, And</h4>
+            <p><a href="https://www.stylecraze.com/author/sushmita_2021/">BY SHUSHMITA BARMAN</a> </p>
         </div>
-        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/caprylyl-glycol-for-skin/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/09/Why-Is-Caprylyl-Glycol-Good-For-The-Skin.jpg.webp" />
-            <h4>Why Is Caprylyl Glycol Good For The Skin?</h4>
-            <p>BY SWATHI E</p>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/nettle-for-hair/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/02/How-To-Use-Nettle-To-Promote-Hair-Health.jpg.webp" />
+            <h4>How To Use Nettle To Promote Hair Health</h4>
+            <p><a href="https://www.stylecraze.com/author/sushmita_2021/"> BY SHUSMITA BARMAN</a></p>
         </div>
-        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/ginseng-for-skin-benefits/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/09/Ginseng-For-Skin-Benefits-How-To-Use-And-Side-Effects.jpg.webp" />
-            <h4>Ginseng For Skin: Benefits, Ways To Use, And Side Effects</h4>
-            <p>BY ARSHIYA SYEDA</p>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/4-papaya-face-pack-tutorials-with-pictures-and-steps/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/01/7-Papaya-Face-Packs-For-Glowing-Fair-And-Smooth-Skin-1.jpg.webp" />
+            <h4>10 Papaya Face Packs For Glowing, Fair, And Smooth Skin</h4>
+            <p><a href="https://www.stylecraze.com/author/shaliniroy/">BY SHALINI ROY</a> </p>
         </div>
     </div>
     <div id="footer">
