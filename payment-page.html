@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <style>
+        #head > div {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top: 0; 
+            width: 100%; 
+        }
+        #main>form>h4{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color:#ff5a78 ;
+        }
+        #main{
+           width: 35%;
+           height: 500px;
+           margin: auto;
+           box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+           margin-top: 100px;
+        }
+        #main>form>input{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            margin: auto;
+            padding: 5px 75px;
+            margin-bottom: 15px;
+        }
+        #main>form>h4{
+           padding-top: 10px;
+        }
+        #main>form>button{
+        margin-left: 34%;
+        padding: 5px 40px;
+        background-color: white;
+        color: black;
+        border-color: #ff5a78;
+        }
+        #main>form>button:hover{
+         background-color: #ff5a78;
+         color: white;
+        }
+        #main>form>input:nth-child(6){
+            background-color: white;
+            color: black;
+            border-color: #ff5a78;
+           padding: 5px 60px;
+           
+        }
+        #main>form>input:nth-child(6):hover{
+            background-color: #ff5a78;
+            color: white;
+        }
+        #img{
+            width:20%;
+      height: 20px; 
+      margin: auto; 
+      margin-top: 30px;
+        }
+        #img>img{
+            width: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div>
+          <img
+            src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png"
+            alt=""
+          />
+        </div>
+      </div>
+    <div id="main">
+        <form>
+            <h4>ENTER YOUR PAYMENT DETAILS</h4>
+            <input id="nam" type="text" name="enter name" placeholder="Enter your name">
+            <input id="card" type="number" placeholder="Enter card number 1234">
+            <input id="cvv" type="number" placeholder="Enter CVV 123 ">
+            <input id="exp" type="text" placeholder="Enter expiry date 05/25"> 
+            <input type="submit">
+            <button onClick="btnFun()">SEND OTP</button>
+            <h4>Enter OTP  to payment successful</h4>
+            <input id="otp" type="number" placeholder="Enter OTP">
+            <button onClick="otpFun()">VERIFY OTP</button>
+        </form>
+    </div>
+ 
+</body>
+</html>
+<script>
+document.querySelector("form").addEventListener("submit",pamentfun)
+function pamentfun(){
+    event.preventDefault();
+    let name=document.querySelector("#nam").value;
+    let card=document.querySelector("#card").value;
+    let cvv=document.querySelector("#cvv").value;
+    let expdate=document.querySelector("#exp").value;
+    let otp=document.querySelector("#otp").value;
+if(name==""){
+    alert("Enter correct details");
+};
+
+if(card==1234 && cvv==123 && expdate=="05/25"){
+alert("Your details in processing... please wait few second..");
+}else{
+    alert("Enter correct Details!!!");
+};
+}
+function btnFun(){
+    alert("Your OTP is :-  3421");
+}
+function otpFun(){
+    if(otp==123654){
+        alert("Invalid OTP Please Enter Again !!!");
+    }else{
+        alert("Payment Successful Thanks for Visiting !!!!");
+    };
+}
+
+</script>

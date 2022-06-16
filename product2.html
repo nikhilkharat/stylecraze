@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
     <style>
+      #head > div {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top: 0; 
+            width: 100%; 
+        }
+        #head > div>img{
+         width: 100%;
+         height: 80%;
+         text-align: center;
+         margin: auto;
+         
+        }
+
+        #heading{
+         margin-top: 150px;
+        }
     #firstdiv{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -63,18 +86,29 @@
     #main{
         margin-top: 50px;
     }
+    #heading>h1{
+        text-align: center;
+        font-family: sans-serif;
+        color: #ff5a78;
+        font-weight: lighter;
+    }
     </style>
 </head>
 <body>
- <img src="https://cdn2.stylecraze.com/wp-content/uploads/static-content/logos/sc-logo.png.webp" alt="Error">
+   <div id="head">
+      <div>
+        <img
+          src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png"
+          
+        />
+      </div>
+    </div>
+ <div id="heading"><h1>HAIR CARE PRODUCTS</h1></div>
   <div id="main">
    <div id="firstdiv">
     <div>
         <img src="https://m.media-amazon.com/images/I/41ykZobjRCL.jpg" alt="Error">
         <h5>Curling Prefection Cream</h5>
-        <span>
-            <i class="fas fa-search-plus"></i>
-        </span>
         <p>$1549</p>
         <button onclick="addToCart(item)">Add to cart</button>
      </div>
@@ -156,6 +190,66 @@
         <img src="https://m.media-amazon.com/images/I/31eW7fl4xIL.jpg" alt="Error">
         <h5>Cake Beauty Curl Cream </h5>
         <p>$1399</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/41cRnvlHc3L.jpg" alt="Error">
+        <h5>Bold Uniq Purple Shampoo</h5>
+        <p>$134</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31OKo9u6V4L.jpg" alt="Error">
+        <h5>Hair Styler Serum </h5>
+        <p>$139</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31Zl5rISsIL.jpg" alt="Error">
+        <h5>Moroccanoil Curl Defining Cream </h5>
+        <p>$199</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31pITpIAKsL.jpg" alt="Error">
+        <h5>Amara Gel Aloe Vera Gel</h5>
+        <p>$1399</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/31sXmG1h3fL.jpg" alt="Error">
+        <h5>Coconut CoWash Cleansing Conditioner</h5>
+        <p>$1359</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/41hET4RxbeL.jpg" alt="Error">
+        <h5>MopTop Curly Hair Custard Gel</h5>
+        <p>$1569</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/41D2YSOLImL.jpg" alt="Error">
+        <h5>John Frieda Frizz Ease Air Dry Waves Styling Foam</h5>
+        <p>$159</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/41SEVhunQGL.jpg" alt="Error">
+        <h5> LuxeOrganix Moroccan Oil Shampoo and Conditioner</h5>
+        <p>$439</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/315NBrBcoTL.jpg" alt="Error">
+        <h5>Argan Magic Defining Curl Cream</h5>
+        <p>$239</p>
+        <button onclick="addToCart(item)">Add to cart</button>
+     </div>
+     <div>
+        <img src="https://m.media-amazon.com/images/I/41-z4y339OL.jpg" alt="Error">
+        <h5>Kick Active Sea Salt Spray</h5>
+        <p>$169</p>
         <button onclick="addToCart(item)">Add to cart</button>
      </div>
    </div>
