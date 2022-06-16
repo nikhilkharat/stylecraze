@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hairstyle</title>
+    <title>Hair Style</title>
     <style>
         #head > div {
             display: grid;
@@ -22,6 +22,8 @@
             text-align: center;
             margin-top: 60px;
             font-size: 40px;
+            font-family: sans-serif;  
+            /* font family added */
         }
         .line1{
             width: 100px;
@@ -30,10 +32,9 @@
             border: none;
         }
          #main{
-            width: 60%;
+            width: 90%;
             height: auto;
             margin: auto;
-            margin-top: 30px;
             
         }
         #makeupButton{
@@ -45,22 +46,29 @@
             gap: 15px 20px;
             
         }
-
+        #makeupButton>button{
+            border-color: #ff5a78;
+            border-radius: 5px;
+            background-color: white;
+            /* all properties added */
+        }
         #makeupButton>button>a{
             
             border-color: #ff5a78;
-            border-radius: 5px;
             font-size: 15px;
             cursor: pointer;
             text-decoration: none;
-            color: black;
+            color: gray;
+            font-family: sans-serif;
+            /* color-gray,font family adeed */
         }
         #makeupButton>button:hover{
         background-color: #ff5a78;
         color: white;
      }
         #card1{
-            width: 60%;
+            width: 90%;
+            /* width change 60 to 90 */
             height: 500px;
             border: 2px solid transparent;
             margin: auto;
@@ -84,9 +92,21 @@
             text-align: center;
             
         }
+        #card1>div>h3{
+            font-family: sans-serif;
+          font-weight: lighter;
+          font-size: 20px;
+          /* all added */
+        }
+        #card1>div>p{
+            font-family: sans-serif;
+            line-height: 20px;
+            /* all added */
+        }
         
         #card2{
-            width: 60%;
+            width: 90%;
+            /* width: 60 to 90 added; */
             height: 300px;
             margin: auto;
             margin-top: 20px; 
@@ -103,6 +123,15 @@
              
             
         }
+        #card2>div>p>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
+        }
+        #card2>div>p{
+            font-size: 12px;
+            /* all added */
+        }
         #card2>div>img{
             width: 100%;
             height: 200px;
@@ -111,15 +140,21 @@
             margin: auto;
             text-align: center;
             margin-top: 15px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* font-family: ; font-weight:  ADDED; */
             
                 
         }
         h4~p{
             padding: 10px;
             font-size: 10px;
+            font-family: sans-serif;
+            /* font-family: ADDED; */
         }
         #card3{
-            width: 60%;
+            width: 90%;
+            /* width: 60 TO 90 ADDED; */
             height: 500px;
             border: 2px solid transparent;
             margin: auto;
@@ -135,6 +170,16 @@
             padding: 10%;
             text-align: center;
         }
+        #card3>div>h3{
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* all added */
+        }
+        #card3>div>p{
+            font-family: sans-serif;
+            /* all added */
+        }
+      
         #card3>h3{
             text-align: center;
         }
@@ -143,7 +188,8 @@
             height:500px;
         }
         #card4{
-            width: 60%;
+            width: 90%;
+            /* WIDTH 60 TO 90 ADDED */
             height: 300px;
             
             margin: auto;
@@ -162,8 +208,15 @@
         #card4>div>img{
             width: 100%;
             height: 200px;
-            
-            
+        }
+        #card4>div>p{
+            font-size: 12px;
+            /* all added */
+        }
+        #card4>div>p>a{
+          color: gray;
+          text-decoration: none; 
+           /* all added */ 
         }
         #footer{
             margin: auto;
@@ -187,6 +240,11 @@
             font-family: sans-serif;
             
             
+        }
+        #footer>div>ul>li>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
         }
         #depth{
             width: 100%;
@@ -216,8 +274,22 @@
         #depth>p:last-child>a{
             color: #ff5a78;
         } 
-        
-
+        #depth>div>p:nth-child(1)>a{
+            color: #ff5a78;
+            /* all added */
+        }
+        #depth>div>p:last-child>a{
+            color: #ff5a78;
+           /* all added */
+        }
+        #depth>div>p{
+            font-family: sans-serif;
+            /* all added */
+        }
+        #depth>div>p:last-child{
+            font-size: 13px;
+               /* all added */
+        }
 
         
         
@@ -244,7 +316,7 @@
                 <button><a href="https://www.stylecraze.com/articles/hairstyles/teen-hairstyles/">Teen Hairstyles</a></button>
                 <button><a href="https://www.stylecraze.com/articles/hairstyles/wavy-hairstyles/">Wavy Hairstyles</a></button>
                 <button><a href="https://www.stylecraze.com/articles/hairstyles/braid-hairstyles/">Braid Hairstyles</a></button>
-                <button><a href="https://www.stylecraze.com/articles/hairstyles/hairstyle-trends-hairstyles/">Hairstyles Trends</a></button>
+                <button><a href="https://www.stylecraze.com/articles/hairstyles/hairstyle-trends-hairstyles/">Hairstyle Trends</a></button>
                 <button><a href="https://www.stylecraze.com/articles/hairstyles/curly-hairstyles/">Curly Hairstyles</a></button>
                 <button><a href="https://www.stylecraze.com/articles/hairstyles/bob-hairstyles/">Bob Hairstyles</a></button>
                 <button><a href="https://www.stylecraze.com/articles/hairstyles/bridal-hairstyle-s/">Bridal Hairstyles</a></button>
@@ -253,80 +325,72 @@
                 <button><a href="https://www.stylecraze.com/articles/hairstyles/long-hairstyles/">Long Hairstyles</a></button>
                 <button><a href="https://www.stylecraze.com/articles/hairstyles/short-hairstyles/">Short Hairstyles</a></button>
                 <button><a href="https://www.stylecraze.com/articles/hairstyles/different-hairstyles/">Different Hairstyles</a></button>
-                
             </div>
     </div>
-    <a href="https://www.stylecraze.com/articles/heat-gun-vs-hair-dryer/" style="text-decoration: none;">
+    <a href="https://www.stylecraze.com/articles/20-long-hairstyles-of-hollywood-and-bollywood-celebrities/" style="text-decoration: none;">
         <div id="card1">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/12/Heat-Gun-Vs--Hair-Dryer-Can-Both-Be-Used-For-Hair.jpg.webp" />
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/02/50-Popular-Hollywood-And-Bollywood-Hairstyles-2-720x810.jpg.webp" />
             <div>
-                <h3>Heat Gun Vs. Hair Dryer: Can Both Be Used For Hair?</h3>
-                <P>It is not an exaggeration to say not many know the 
-                    difference between a heat gun and a hairdryer. 
-                    Though these tools look similar and work almost 
-                    the same way, you cannot replace them with one another. 
-                    A heat gun</P>
+                <h3>50 Popular Hollywood & Bollywood Celebrity Hairstyles To</h3>
+                <P>There is no denying that movies have always played a crucial role in offering us umpteen fashion inspirations. Thanks to Hollywood and Bollywood hairstyles, many movie celebrities have motivated us to follow in their footsteps. This article lists some evergreen […]</P>
             </div> 
         </div>
     </a>
     
     <div id="card2">
+        <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/simple-hairsytles-for-kids-with-short-hair/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/05/4-Simple-Hairstyles-For-Kids-With-Short-Hair-2.jpg.webp" />
+            <h4>4 Amazing Hairstyles For Kids With Short Hair</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/"> BY-DR SHRUTI CHAUHAN</a></p>
+        </div>
+        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/heat-gun-vs-hair-dryer/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2020/12/Heat-Gun-Vs--Hair-Dryer-Can-Both-Be-Used-For-Hair.jpg.webp" />
+            <h4>Heat Gun Vs. Hair Dryer: Can Both Be Used For Hair?</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/"> BY-DR SHRUTI CHAUHAN</a> </p>
+        </div>
         <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/blunt-bangs-hairstyles/'">
             <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/12/20-Envious-Blunt-Bangs-Hairstyles.jpg.webp" />
             <h4>20 Envious Blunt Bangs Hairstyles</h4>
-            <p>BY ANJALI SAYEE</p>
-        </div>
-        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/inverted-bob-haircuts/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/11/36-Gorgeous-Inverted-Bob-Haircuts.jpg.webp" />
-            <h4>36 Gorgeous Inverted Bob Haircuts For Women</h4>
-            <p>BY ANJALI SAYEE</p>
-        </div>
-        <div style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/should-i-cut-my-bangs/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/10/Should-You-Get-Bangs-The-Truth.jpg.webp" />
-            <h4>Turmeric Face Pack:Benifits And How To Use</h4>
-            <p>BY ANJALI SAYEE</p>
+            <p><a href="https://www.stylecraze.com/dc/dr-preethi-nagaraj/">BY DR PREETHI NAAGRAJ</a> </p>
         </div>
     </div>
-    <div id="card3" style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/best-bob-braids-hairstyles/'" >
+    <div id="card3" style="cursor:pointer;" onclick="document.location='https://www.stylecraze.com/articles/inverted-bob-haircuts/'" >
         <div>
-            <h3>25 Exquisite Bob Braid Hairstyles & How To Style Them</h3>
-            <P>Moesha Mitchell is known for two things: 
-                being the Fresh Princess Of L.A. and her bob braids. 
-                In Western African communities, braids were used to show marital status, 
-                wealth, religion, age and rank. The ever-trendy braids have since been blended</P>
+            <h3>36 Gorgeous Inverted Bob Haircuts For Women</h3>
+            <P>Ask anyone about the bob cut, and they will describe short hair. But did you know that there are different bob hairstyles? One such cut is the inverted bob haircut! The inverted bob is a face-framing hairstyle, not to be […]</P>
         </div>
-        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/10/25-Exquisite-Bob-Braids-You-Need-To-Try-Out-720x810.jpg.webp" />
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/11/36-Gorgeous-Inverted-Bob-Haircuts-720x810.jpg.webp" />
     </div>
     <div id="card4">
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/should-i-cut-my-bangs/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/10/Should-You-Get-Bangs-The-Truth.jpg.webp" />
+            <h4>Should I Get Bangs? Things To Consider And Styling Tips</h4>
+            <p><a href="https://www.stylecraze.com/author/arshiya/">BY ARSHIYA SYEDA</a> </p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/best-bob-braids-hairstyles/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/10/25-Exquisite-Bob-Braids-You-Need-To-Try-Out.jpg.webp" />
+            <h4>25 Exquisite Bob Braid Hairstyles & How To Style Them</h4>
+            <p><a href="https://www.stylecraze.com/dc/dr-shruti-chavan/">BY DR SHRUTI CHAUHAN</a> </p>
+        </div>
         <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/stunning-braided-updo-hairstyles-for-black-women/'">
             <img src="https://cdn2.stylecraze.com/wp-content/uploads/2015/03/20-Beautiful-Braided-Updos-For-Black-Women-1.jpg.webp" />
             <h4>20 Beautiful Braided Updos For Black Women</h4>
-            <p>BY ANJALI SAYEE</p>
+            <p><a href="https://www.stylecraze.com/author/eshasaxena/"> BY ESHA SSAXENA</a></p>
         </div>
         <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/3-simple-techniques-to-get-wavy-long-hair/'">
             <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/12/Techniques-To-Get-Chic-Wavy-Hair.jpg.webp" />
             <h4>10 Easy Ways To Get Wavy Hair At Home</h4>
-            <p>By ARSHIYA SYEDA</p>
+            <p><a href="https://www.stylecraze.com/author/sushmita_2021/">BY SHUSHMITA BARMAN</a> </p>
+        </div>
+        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/easy-to-do-braided-hairstyle/'">
+            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/02/How-To-Use-Nettle-To-Promote-Hair-Health.jpg.webp" />
+            <h4>45 Stunningly Easy Braid Hairstyles</h4>
+            <p><a href="https://www.stylecraze.com/author/sushmita_2021/"> BY SHUSMITA BARMAN</a></p>
         </div>
         <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/best-hairstyles-for-short-hair/'">
             <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/11/20-Incredible-DIY-Short-Hairstyles.jpg.webp" />
             <h4>20 Incredible DIY Short Hairstyles For Women To Try In 2022</h4>
-            <p>BY ANJALI SAYEE</p>
-        </div>
-        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/easy-to-do-braided-hairstyle/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/09/45-Stunningly-Easy-Braid-Hairstyles.jpg.webp" />
-            <h4>45 Stunningly Easy Braid Hairstyles</h4>
-            <p>BY ANJALI SAYEE</p>
-        </div>
-        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/galaxy-hair-color-styles/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2019/06/29-Brilliant-Galaxy-Hair-Color-Styles.jpg.webp" />
-            <h4>29 Brilliant Galaxy Hair Color Styles</h4>
-            <p>BY ANJALI SAYEE</p>
-        </div>
-        <div style="cursor:pointer ;" onclick="document.location='https://www.stylecraze.com/articles/10-funky-hairstyles-for-short-hair/'">
-            <img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/07/Funky-Hairstyles-For-Short-Hair.jpg.webp" />
-            <h4>38 Funky Hairstyles For Short Hair</h4>
-            <p>BY ANJALI SAYEE</p>
+            <p><a href="https://www.stylecraze.com/author/shaliniroy/">BY SHALINI ROY</a> </p>
         </div>
     </div>
     <div id="footer">
