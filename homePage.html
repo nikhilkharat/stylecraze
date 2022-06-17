@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+         #head > div {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            height: 50px;
+           
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top: 0; 
+            width: 100%; 
+        }
+        #menu{
+         margin-top: 5%;
+         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* position: fixed;
+        top: 0; */
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(50, 50, 99, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+       
+        }
+        #menu>a{
+          text-decoration: none;
+          color: black;
+          padding: 10px 20px;
+          font-family: sans-serif;
+        }
+        #menu>a:hover{
+          color:#ff5a78 ;
+        }
+        .card1{
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        .card1>div{
+          margin-top: 10px;
+          margin-left: 2px;
+          width: 30%;
+        }
+        .card1>div>img{
+          width: 100%;
+        }
+        .card1>div>h3{
+          font-family: sans-serif;
+          color: #424242;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div>
+          <img
+            src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png"
+            alt="Error"
+          />
+        </div>
+   
+    </div>
+  
+    <div id="menu">
+      <a href="#">MAKE UP</a>
+    <a href="#">HAIR CARE</a>
+    <a href="#">SKIN CARE</a>
+    <a href="#">HAIRSTYLES</a>
+    <a href="#">HEALTH & WELLNESS</a>
+    <a href="#">NEWS</a>
+    <a href="#">TOOLS</a>
+    <a href="#">PRODUCTS</a>
+    <a href="#">ABOUT US</a>
+        </div>
+    <div class="card1">
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/sunglasses-and-face-shapes-guide/'">
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2017/08/A-Useful-Guide-To-Picking-Sunglasses-For-Your-Face-Shape-2.jpg.webp" alt="Error">
+        <h3>A Useful Guide To Picking Sunglasses For Your Face</h3>
+      </div>
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/how-to-match-the-colors-of-your-clothes/'">
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2017/08/How-To-Mix-And-Match-Colors-In-Your-Clothes--The-Ultimate-Color-Wheel-Guide-2.jpg.webp" alt="Error">
+        <h3>How To Mix and Match colors in Your Clothes</h3>
+      </div>
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/amazing-ombre-nail-art-tutorial-with-detailed-steps-pictures/'">
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2017/08/How-To-Do-Ombre-Nails-Like-A-Pro-Tutorial-With-Pictures-2.jpg.webp" alt="Error">
+        <h3>How to Do Ombre Nails Like a Pro</h3>
+      </div>
+    </div>
+</body>
+</html>
