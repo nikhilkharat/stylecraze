@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #head > div {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top: 0; 
+            width: 100%; 
+        }
+        #head{
+            margin-bottom: 70px;
+        }
+        #filter{
+            padding: 10px 50px;
+            border-color: #ff5a78;
+            margin-bottom: 15px;
+        }
+        #filter:hover{
+            background-color:#ff5a78 ;
+            color: white;
+        }
+        #products{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            row-gap: 30px;
+        }
+        #products>div>img{
+            width: 90%;
+            transition:all 0.3s ease;
+        }
+        #products>div:hover{
+            width: 85%;
+        }
+        h1{
+            text-align: center;
+            font-family: sans-serif;
+            color: #ff5a78;
+        }
+        #products>div{
+            width: 90%;
+            height: 400px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+        }
+        #products>div>img{
+            width: 100%;
+            height: 50%;
+        }
+        #products>div>h3{
+            text-align: center;
+            font-family: sans-serif;
+            color: #424242;
+            margin-bottom: 5px;
+        }
+        #products>div>h4{
+            text-align: center;
+            font-family: sans-serif;
+            color: #ff5a78;
+            margin-bottom: 5px;
+        }
+    #products>div>p:nth-child(4){
+        text-align: center;
+        font-family: sans-serif;
+        margin-bottom: 5px;
+    }
+    #products>div>p:nth-child(5){
+        text-align: center;
+        font-family: sans-serif;
+        color: #424242;
+        margin-bottom: 5px;
+    }
+    #products>div>button{
+      padding: 5px 20px;
+      margin-left: 30%;
+      background-color: white;
+      color: black;
+      border-color: #ff5a78;
+    }
+    #products>div>button:hover{
+        background-color: #ff5a78;
+        color: white;
+    }
+    button{
+        padding: 10px 50px;
+        color: black;
+        background-color: white;
+        border-color: #ff5a78;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #ff5a78;
+        color: white;
+    }
+    button>a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div>
+          <img
+            src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <h1>WELCOME TO STYLECRAZE PRODUCT FIELD</h1>
+      
+  <select  id="filter">
+      <option value="All">All Product</option>
+      <option value="makeup">Makeup</option>
+      <option value="haircare">Hair Care</option>
+      <option value="skincare">Skin Care</option>
+      <option value="hairstyles">Hairstyles</option>
+      <option value="healthwell">Health & Wellnes</option>
+  </select> 
+  <button><a href="cart.html"> Go To Cart</a></button> 
+  <div id="products">
+
+  </div>
+</body>
+<script>
+
+
+    let productData=[
+    {
+    brand: "Mac",
+    name: "MAC Studio Fix Fluid SPF 15 Foundation",
+    price: "20$",
+    productID: "women1",
+    catagory: "makeup",
+    img: "https://m.media-amazon.com/images/I/31CfM4BXvCL.jpg",
+  },
+  {
+    brand: "NARS",
+    name: "NARS Sheer Matte Foundation",
+    price: "13$",
+    productID: "women2",
+    catagory: "makeup",
+    img: "https://m.media-amazon.com/images/I/31vYgG7-75L.jpg",
+  },
+  {
+    brand: "Estee Lauder",
+    name: "Estee Lauder Double Wear SPF 10 Foundation",
+    price: "79$",
+    productID: "women3",
+    catagory: "makeup",
+    img: "https://m.media-amazon.com/images/I/41w3pM1XjmL.jpg",
+  },
+  {
+    brand: "Laura ",
+    name: "Eyes Glossing Waterful Foundation ",
+    price: "20$",
+    productID: "women4",
+    catagory: "makeup",
+    img: "https://m.media-amazon.com/images/I/31w-SyDjrcL.jpg",
+  },
+  {
+    brand: "Touch In Sol",
+    name: " Touch In Sol Moisture Liquid ",
+    price: "13$",
+    productID: "women5",
+    catagory: "makeup",
+    img: "https://m.media-amazon.com/images/I/41yCnV1bB5L.jpg",
+  },
+  {
+    brand: "Double Lasting",
+    name: " Etude House Double Lasting Foundation",
+    price: "97$",
+    productID: "women6",
+    catagory: "makeup",
+    img: "https://m.media-amazon.com/images/I/41oWFdop6fL.jpg",
+  },
+  {
+    brand: "Dream Urban Cover",
+    name: "Maybelline Dream Urban ",
+    price: "20$",
+    productID: "women7",
+    catagory: "makeup",
+    img: "https://m.media-amazon.com/images/I/313OzZmsWeL.jpg",
+  },
+  {
+    brand: "Bold Uniq",
+    name: "Bold Uniq Purple Shampoo",
+    price: "13$",
+    productID: "women8",
+    catagory: "haircare",
+    img: "https://m.media-amazon.com/images/I/41cRnvlHc3L.jpg",
+  },
+  {
+    brand: "Herstyler",
+    name: "Herstyler Hair Serum",
+    price: "97$",
+    productID: "women9",
+    catagory: "haircare",
+    img: "https://m.media-amazon.com/images/I/31OKo9u6V4L.jpg",
+  },
+  {
+    brand: "Moroccanoil",
+    name: "Moroccanoil Curl",
+    price: "45$",
+    productID: "women10",
+    catagory: "haircare",
+    img: "https://m.media-amazon.com/images/I/31Zl5rISsIL.jpg"
+  },
+  {
+    brand: "Frizz",
+    name: "Frizz Ease",
+    price: "98$",
+    productID: "women11",
+    catagory: "haircare",
+    img: "https://m.media-amazon.com/images/I/41D2YSOLImL.jpg",
+  },
+  {
+    brand: "Mop Top",
+    name: "MopTop Curly Hair",
+    price: "56$",
+    productID: "women12",
+    catagory: "haircare",
+    img: "https://m.media-amazon.com/images/I/41hET4RxbeL.jpg",
+  },
+  {
+    brand: "Moisturizer",
+    name: "Moisturizer",
+    price: "76$",
+    productID: "women13",
+    catagory: "skincare",
+    img: "https://m.media-amazon.com/images/I/41lSgDsSEOL.jpg",
+  },
+  {
+    brand: "Pore Primer",
+    name: "Primer",
+    price: "99$",
+    productID: "women14",
+    catagory: "skincare",
+    img: "https://m.media-amazon.com/images/I/31bQZdmA66L.jpg",
+  },
+  {
+    brand: "Ultra HD",
+    name: "Foundation",
+    price: "13$",
+    productID: "women15",
+    catagory: "Skincare",
+    img: "https://m.media-amazon.com/images/I/31v7mcROS6L.jpg",
+  },
+  {
+    brand: "NARS",
+    name: "Conealer",
+    price: "79$",
+    productID: "women16",
+    catagory: "skincare",
+    img: "https://m.media-amazon.com/images/I/31WepuguTNL.jpg",
+  },
+  {
+    brand: "NARS",
+    name: "Blush",
+    price: "20$",
+    productID: "women17",
+    catagory: "skincare",
+    img: "https://m.media-amazon.com/images/I/319uHUFLrnL.jpg",
+  },
+  {
+    brand: "Naked",
+    name: "Nude Eyeshadow",
+    price: "13$",
+    productID: "women18",
+    catagory: "skincare",
+    img: "https://m.media-amazon.com/images/I/41OhtoR4HjL.jpg",
+  },
+  {
+    brand: "Bee bay",
+    name: "LuxeOrganix Moroccan Oil Shampoo",
+    price: "979$",
+    productID: "women19",
+    catagory: "hairstyles",
+    img: "https://m.media-amazon.com/images/I/41SEVhunQGL.jpg",
+  },
+  {
+    brand: "Argan",
+    name: "Argan Magic Cream",
+    price: "20$",
+    productID: "women20",
+    catagory: "hairstyles",
+    img: "https://m.media-amazon.com/images/I/315NBrBcoTL.jpg",
+  },
+  {
+    brand: "Kick",
+    name: "Kick Active Spray",
+    price: "13$",
+    productID: "women21",
+    catagory: "hairstyles",
+    img: "https://m.media-amazon.com/images/I/41-z4y339OL.jpg",
+  },
+  {
+    brand: "Curl",
+    name: "Curlsmith Balm",
+    price: "97$",
+    productID: "women22",
+    catagory: "hairstyles",
+    img: "https://m.media-amazon.com/images/I/41Ky5E2w+4L.jpg",
+  },
+  {
+    brand: "LuxeOrganix",
+    name: "LuxeOrganix Conditionar",
+    price: "45$",
+    productID: "women23",
+    catagory: "hairstyles",
+    img: "https://m.media-amazon.com/images/I/41WRdcfWDYL.jpg"
+  },
+  {
+    brand: "NARS",
+    name: "Blush",
+    price: "20$",
+    productID: "women17",
+    catagory: "healthwell",
+    img: "https://m.media-amazon.com/images/I/319uHUFLrnL.jpg",
+  },
+  {
+    brand: "Mac",
+    name: "MAC Studio Fix Fluid SPF 15 Foundation",
+    price: "20$",
+    productID: "women1",
+    catagory: "healthwell",
+    img: "https://m.media-amazon.com/images/I/31CfM4BXvCL.jpg",
+  },
+  {
+    brand: "Mop Top",
+    name: "MopTop Curly Hair",
+    price: "56$",
+    productID: "women12",
+    catagory: "healthwell",
+    img: "https://m.media-amazon.com/images/I/41hET4RxbeL.jpg",
+  },
+  {
+    brand: "Naked",
+    name: "Nude Eyeshadow",
+    price: "57$",
+    productID: "women18",
+    catagory: "healthwell",
+    img: "https://m.media-amazon.com/images/I/41OhtoR4HjL.jpg",
+  },
+  {
+    brand: "Cetafill",
+    name: "Cetafil Pro Wash",
+    price: "123$",
+    productID: "women18",
+    catagory: "healthwell",
+    img: "https://m.media-amazon.com/images/I/31moHaA9hOL.jpg",
+  }
+]
+let productsCont=document.getElementById("products");
+let filter=document.getElementById("filter");
+let cartLs=JSON.parse(localStorage.getItem("cart-page"))||[];
+function displayProducts(productData){
+   productsCont.innerHTML="";
+    productData.forEach(function(elem){
+        let product=document.createElement("div");
+
+        let img=document.createElement("img");
+        img.src=elem.img;
+
+        let name=document.createElement("h3");
+        name.innerText=elem.name;
+
+        let brand=document.createElement("h4");
+        brand.innerText=elem.brand;
+
+        let price=document.createElement("p");
+        price.innerText=elem.price;
+
+        let size=document.createElement("h4");
+        size.innerText=elem.size;
+
+        let catagory=document.createElement("p");
+        catagory.innerText=elem.catagory;
+
+        let addToCart=document.createElement("button");
+        addToCart.innerText="Add To Cart";
+        addToCart.addEventListener("click",function(){
+           if(addToCartFunc(elem.productID)===true){
+               alert("Product Added Successfully");
+               cartLs.push(elem);
+               localStorage.setItem("cart-page",JSON.stringify(cartLs));
+           }else{
+               alert("Product Already Exist");
+           }
+        })
+
+        product.append(img,name,brand,price,catagory,addToCart);
+        productsCont.append(product)
+    })
+}
+displayProducts(productData);
+filter.addEventListener("change",function(){
+    if(filter.value==="All"){
+        displayProducts(productData);  
+    }else{
+        let filtered=productData.filter(function(elem){
+            return elem.catagory===filter.value;
+        })
+        displayProducts(filtered);
+    }
+})
+function addToCartFunc(id){
+for(let i=0;i<cartLs.length;i++){
+        if(cartLs[i].productId==id){
+            return false;
+        }
+}
+return true;
+}
+
+</script>
+</html>
