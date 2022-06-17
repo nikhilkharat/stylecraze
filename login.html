@@ -82,40 +82,30 @@
 </body>
 </html>
 <script>
-    document.querySelector("form").addEventListener("submit", myFunc);
-
-    
-
-    function myFunc(event){
+    let form=document.querySelector("form");
+    let signUpData=JSON.parse(localStorage.getItem("signUpData"))||[];
+    form.addEventListener("submit",function(event){
         event.preventDefault();
-
-
-        let arrayData=JSON.parse(localStorage.getItem("signup"));
-
-        let mail=document.querySelector("#email").value;
-        let pass=document.querySelector("#pass").value;
-
-        let flag=false;
-       
-        arrayData.forEach((element) => {
-            if (element.email==mail && element.password==pass)
-            {
-                flag=true
+        let data={
+            email:form.email.value,
+            password:form.pass.value,
+        }
+        if(checkLogin(data.email,data.password)===true){
+            localStorage.setItem("login",JSON.stringify(data));
+            alert("Log In Successfully");
+            window.location.href="homePage.html";
+        }else{
+            alert("Wrong Email or Password");
+        }
+    })
+    function checkLogin(email,password){
+            let filtered=signUpData.filter(function(elem){
+                return elem.email===email && elem.password===password;
+            })
+            if(filtered.length>0){
+                return true;
+            }else{
+                return false;
             }
-        });
-            
-        
-        if (flag==true)
-        {
-            alert("Succesfully Login");
-        }
-        else
-        {
-            alert("Wrong Credential");
-        }
-        
-
-
-
     }
 </script>

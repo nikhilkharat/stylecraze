@@ -87,22 +87,41 @@
 </body>
 </html>
 <script>
-    document.querySelector("form").addEventListener("submit", myFunc);
-
-    let arr=JSON.parse(localStorage.getItem("signup"))||[];
-
-    function myFunc(event){
+let form=document.querySelector("form");
+    let signUpData=JSON.parse(localStorage.getItem("signUpData"))||[];
+    form.addEventListener("submit",function(event){
         event.preventDefault();
-        
-
-        let Obj = {
-            name: document.querySelector("#name").value,
-            email: document.querySelector("#email").value,
-            password: document.querySelector("#pass").value,
+        let data={
+             name:form.name.value,
+             email:form.email.value,
+             password:form.pass.value,
+             
         }
-        arr.push(Obj);
-        localStorage.setItem("signup", JSON.stringify(arr));
-        alert("Sign up Succesfully")
+        
+        // if return true means you can signup if return false means you can not signup
+        if(checkEmails(data.email)===true){
+            signUpData.push(data);
+            localStorage.setItem("signUpData",JSON.stringify(signUpData));
+            alert("Congratulation!!! Your Account is Created You Can Log In Now");
+            window.location.href="login.html";
+        }else{
+            alert("Account Already Exist Please Log In");
+            window.location.href="index.html";
+        }
+    })
+    
 
+    // I check email for validation (account already exist or not)
+    function checkEmails(email){
+        let filtered=signUpData.filter(function(elem){
+            return email===elem.email;
+        })
+        if(filtered.length>0){
+            return false;
+        }else{
+            return true;
+        }
     }
+
+    
 </script>

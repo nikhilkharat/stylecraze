@@ -11,52 +11,559 @@
             justify-content: center;
             justify-items: center;
             height: 50px;
-           
+            border: 1px solid transparent ;
             overflow: hidden;
             background-color: white;
             position: fixed;
             top: 0; 
             width: 100%; 
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
         }
         #menu{
-         margin-top: 5%;
-         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        /* position: fixed;
-        top: 0; */
-        justify-content: center;
-        align-items: center;
-        box-shadow: rgba(50, 50, 99, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            margin-top: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:4px solid transparent;
+            
        
         }
-        #menu>a{
+        #menu>h3>a{
           text-decoration: none;
-          color: black;
+          color:rgb(247, 154, 33);
           padding: 10px 20px;
           font-family: sans-serif;
+          font-style: italic;          
         }
-        #menu>a:hover{
-          color:#ff5a78 ;
-        }
-        .card1{
+        #main{
+          width: 100%;
+          height: auto;
           display: flex;
-          width: 100%;
           justify-content: center;
-          align-items: center;
+          margin-top: 70px;         
         }
-        .card1>div{
-          margin-top: 10px;
-          margin-left: 2px;
-          width: 30%;
+        #main>a>div>h3{
+          color: black;
+          text-align: center;
         }
-        .card1>div>img{
-          width: 100%;
+        #container1 > div {
+            text-align: center;
+            margin-top: 60px;
+            
+            font-size: 40px;
+            font-family: sans-serif;  
+            /* font family added */
         }
-        .card1>div>h3{
-          font-family: sans-serif;
-          color: #424242;
+        .line1{
+            width: 100px;
+            height: 3px;
+            background-color: rgb(247, 110, 133);
+            border: none;
         }
+        #card1{
+            width: 80%;
+            height: 500px;
+            border: 2px solid transparent;
+            margin: auto;
+            margin-top: 30px; 
+            display: grid; 
+            grid-template-columns: 65% 35%;
+            grid-template-rows: repeat(1, auto); 
+            background-color: white;
+            color: black;
+        }
+        #card1>img{
+            width: 100%;
+            height:500px;
+        }
+        #card1>div{
+            margin-top:125px;
+            padding: 10%;
+            text-align: center;
+        }
+        #card1>h3{
+            text-align: center;
+            
+        }
+        #card1>div>h3{
+            font-family: sans-serif;
+            font-weight:normal;
+            font-size: 30px;
+            text-align:left;
+          
+        }
+        #card1>div>p{
+            font-family: sans-serif;
+            line-height: 20px;
+            text-align: justify;
+            
+        }
+        
+        #box1{
+            width: 80%;
+
+
+            /* width: 60 to 90 added; */
+
+            height: 300px;
+            margin: auto;
+            margin-top: 20px; 
+            display:flex; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto); 
+            justify-content: space-between; 
+            
+        }
+        #box1>div{
+            width: 30%;
+            height: 300px;
+            color: black;
+             
+            
+        }
+        #box1>div>p>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
+        }
+        #box1>div>p{
+            font-size: 12px;
+            
+            /* all added */
+        }
+        #box1>div>img{
+            width: 100%;
+            height: 200px;
+        }
+        img~h5{
+            margin: auto;
+            text-align: left;
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* font-family: ; font-weight:  ADDED; */
+            
+                
+        }
+        h5~p{
+            padding: 10px;
+            text-align: left;
+            font-size: 10px;
+            font-family: sans-serif;
+            
+            /* font-family: ADDED; */
+        
+        }
+        p>a{
+          color:rgb(247, 110, 133);
+        }
+        #container1 > div {
+            text-align: center;
+            margin-top: 60px;
+            
+            font-size: 40px;
+            font-family: sans-serif;  
+            /* font family added */
+        }
+        .line1{
+            width: 100px;
+            height: 3px;
+            background-color: rgb(247, 110, 133);
+            border: none;
+        }
+        #card1{
+            width: 80%;
+            height: 500px;
+            border: 2px solid transparent;
+            margin: auto;
+            margin-top: 30px; 
+            display: grid; 
+            grid-template-columns: 65% 35%;
+            grid-template-rows: repeat(1, auto); 
+            background-color: white;
+            color: black;
+        }
+        #card1>img{
+            width: 100%;
+            height:500px;
+        }
+        #card1>div{
+            margin-top:125px;
+            padding: 10%;
+            text-align: center;
+        }
+        #card1>h3{
+            text-align: center;
+            
+        }
+        #card1>div>h3{
+            font-family: sans-serif;
+            font-weight:normal;
+            font-size: 20px;
+            text-align:left;
+          
+        }
+        #card1>div>p{
+            font-family: sans-serif;
+            line-height: 20px;
+            
+            
+        }
+        
+        #box1{
+            width: 80%;
+
+
+            /* width: 60 to 90 added; */
+
+            height: 300px;
+            margin: auto;
+            margin-top: 20px; 
+            display:flex; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto); 
+            justify-content: space-between; 
+            
+        }
+        #box1>div{
+            width: 30%;
+            height: 300px;
+            color: black;
+             
+            
+        }
+        #box1>div>p>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
+        }
+        #box1>div>p{
+            font-size: 12px;
+            
+            /* all added */
+        }
+        #box1>div>img{
+            width: 100%;
+            height: 200px;
+        }
+        img~h5{
+            margin: auto;
+            text-align: left;
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* font-family: ; font-weight:  ADDED; */
+            
+                
+        }
+        h5~p{
+            padding: 10px;
+            text-align: left;
+            font-size: 10px;
+            font-family: sans-serif;
+            
+            /* font-family: ADDED; */
+        
+        }
+        p>a{
+          color:rgb(247, 110, 133);
+        }
+        #container2 > div {
+            text-align: center;
+            margin-top: 60px;
+            
+            font-size: 40px;
+            font-family: sans-serif;  
+            /* font family added */
+        }
+        .line2{
+            width: 100px;
+            height: 3px;
+            background-color: rgb(247, 110, 133);
+            border: none;
+        }
+        #card2{
+            width: 80%;
+            height: 500px;
+            border: 2px solid transparent;
+            margin: auto;
+            margin-top: 30px; 
+            display: grid; 
+            grid-template-columns: 65% 35%;
+            grid-template-rows: repeat(1, auto); 
+            background-color: white;
+            color: black;
+        }
+        #card2>img{
+            width: 100%;
+            height:500px;
+        }
+        #card2>div{
+            margin-top:125px;
+            padding: 10%;
+            text-align: center;
+        }
+        #card2>h3{
+            text-align: center;
+            
+        }
+        #card2>div>h3{
+            font-family: sans-serif;
+            font-weight:normal;
+            font-size: 20px;
+            text-align:left;
+          
+        }
+        #card2>div>p{
+            font-family: sans-serif;
+            font-size: 15px;
+            text-align: left;
+        }
+        
+        #box2{
+            width: 80%;
+
+
+            /* width: 60 to 90 added; */
+
+            height: 300px;
+            margin: auto;
+            margin-top: 20px; 
+            display:flex; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto); 
+            justify-content: space-between; 
+            
+        }
+        #box2>div{
+            width: 30%;
+            height: 300px;
+            color: black;
+             
+            
+        }
+        #box2>div>p>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
+        }
+        #box2>div>p{
+            font-size: 12px;
+            
+            /* all added */
+        }
+        #box2>div>img{
+            width: 100%;
+            height: 200px;
+        }
+        img~h5{
+            margin: auto;
+            text-align: left;
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* font-family: ; font-weight:  ADDED; */
+   
+        }
+        h5~p{
+            padding: 10px;
+            text-align: left;
+            font-size: 10px;
+            font-family: sans-serif;
+            
+            /* font-family: ADDED; */
+        
+        }
+        p>a{
+          color:rgb(247, 110, 133);
+        }
+        #container3 > div {
+            text-align: center;
+            margin-top: 60px;
+            
+            font-size: 40px;
+            font-family: sans-serif;  
+            /* font family added */
+        }
+        .line3{
+            width: 100px;
+            height: 3px;
+            background-color: rgb(247, 110, 133);
+            border: none;
+        }
+        #card3{
+            width: 80%;
+            height: 500px;
+            border: 2px solid transparent;
+            margin: auto;
+            margin-top: 30px; 
+            display: grid; 
+            grid-template-columns: 65% 35%;
+            grid-template-rows: repeat(1, auto); 
+            background-color: white;
+            color: black;
+        }
+        #card3>img{
+            width: 100%;
+            height:500px;
+        }
+        #card3>div{
+            margin-top:125px;
+            padding: 10%;
+            text-align: center;
+        }
+        #card3>h3{
+            text-align: center;
+            
+        }
+        #card3>div>h3{
+            font-family: sans-serif;
+            font-weight:normal;
+            font-size: 20px;
+            text-align:left;
+          
+        }
+        #card3>div>p{
+            font-family: sans-serif;
+            font-size: 15px;
+            text-align: left;
+        }
+        
+        #box3{
+            width: 80%;
+
+
+
+
+            height: 300px;
+            margin: auto;
+            margin-top: 20px; 
+            display:flex; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto); 
+            justify-content: space-between; 
+            
+        }
+        #box3>div{
+            width: 30%;
+            height: 300px;
+            color: black;
+             
+            
+        }
+        #box3>div>p>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
+        }
+        #box3>div>p{
+            font-size: 12px;
+            
+            /* all added */
+        }
+        #box3>div>img{
+            width: 100%;
+            height: 200px;
+        }
+        img~h5{
+            margin: auto;
+            text-align: left;
+            margin-top: 10px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            /* font-family: ; font-weight:  ADDED; */
+   
+        }
+        h5~p{
+            padding: 10px;
+            text-align: left;
+            font-size: 10px;
+            font-family: sans-serif;
+            
+            /* font-family: ADDED; */
+        
+        }
+        p>a{
+          color:rgb(247, 110, 133);
+        }
+        #footer{
+            margin: auto;
+            margin-top: 100px;
+            text-decoration: none;
+        }
+        #footer>div>ul{
+            
+            display: flex;
+            column-gap: 8px;
+            font-weight: bolder;
+            text-align: center;
+            font-family: sans-serif;
+            
+            margin-top: 50px;
+        }
+        #footer>div>ul>li{
+            margin: auto;
+            margin-top: 100px;
+            font-size: 13px;
+            font-family: sans-serif;
+            
+            
+        }
+        #footer>div>ul>li>a{
+            color: gray;
+            text-decoration: none;
+            /* all added */
+        }
+        #depth{
+            width: 100%;
+            height: 150px;
+            margin: auto;
+            display: grid;
+            text-align: center;
+            align-content: center;
+            background-color: #e6e6e6;
+            margin-top: 20px;
+        }
+        #depth>p{
+            padding: inherit;
+            text-align: center;
+            font-size: 20px;
+            }
+        #depth>p>a{
+            text-align: center;
+            font-size: 10px;
+            color: #ff5a78;
+        }
+        #depth>p:last-child{
+            text-align: left;
+            font-size: 8px;
+            line-height: 18px;
+        } 
+        #depth>p:last-child>a{
+            color: #ff5a78;
+        } 
+        #depth>div>p:nth-child(1)>a{
+            color: #ff5a78;
+            /* all added */
+        }
+        #depth>div>p:last-child>a{
+            color: #ff5a78;
+           /* all added */
+        }
+        #depth>div>p{
+            font-family: sans-serif;
+            /* all added */
+        }
+        #depth>div>p:last-child{
+            font-size: 8px;
+               /* all added */
+        }
+
     </style>
 </head>
 <body>
@@ -71,29 +578,167 @@
     </div>
   
     <div id="menu">
-      <a href="#">MAKE UP</a>
-    <a href="#">HAIR CARE</a>
-    <a href="#">SKIN CARE</a>
-    <a href="#">HAIRSTYLES</a>
-    <a href="#">HEALTH & WELLNESS</a>
-    <a href="#">NEWS</a>
-    <a href="#">TOOLS</a>
-    <a href="#">PRODUCTS</a>
-    <a href="#">ABOUT US</a>
-        </div>
-    <div class="card1">
-      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/sunglasses-and-face-shapes-guide/'">
-        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2017/08/A-Useful-Guide-To-Picking-Sunglasses-For-Your-Face-Shape-2.jpg.webp" alt="Error">
-        <h3>A Useful Guide To Picking Sunglasses For Your Face</h3>
+        <h3><a href="makeup.html">MAKE UP</a></h3>
+        <h3><a href="haircare.html">HAIR CARE</a></h3>
+        <h3><a href="skincare.html">SKIN CARE</a></h3>
+        <h3><a href="hairstyle.html">HAIRSTYLES</a></h3>
+        <h3><a href="health&wellness.html">HEALTH & WELLNESS</a></h3>
+        <h3><a href="#">NEWS</a></h3>
+        <h3><a href="#">TOOLS</a></h3>
+        <h3><a href="product2.html">PRODUCTS</a></h3>
+        <h3><a href="aboutus.html">ABOUT US</a></h3>
+    </div>
+    
+    <div id="main">
+      <a href="https://www.stylecraze.com/articles/sunglasses-and-face-shapes-guide/" style="text-decoration: none;">
+        <div>
+        
+          <img src="https://cdn2.stylecraze.com/wp-content/uploads/2017/08/A-Useful-Guide-To-Picking-Sunglasses-For-Your-Face-Shape-2.jpg.webp" alt="Error">
+          <h3>A Useful Guide To Picking Sunglasses For Your Face</h3>
       </div>
-      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/how-to-match-the-colors-of-your-clothes/'">
-        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2017/08/How-To-Mix-And-Match-Colors-In-Your-Clothes--The-Ultimate-Color-Wheel-Guide-2.jpg.webp" alt="Error">
-        <h3>How To Mix and Match colors in Your Clothes</h3>
+      </a>
+      <a href="https://www.stylecraze.com/articles/how-to-match-the-colors-of-your-clothes/" style="text-decoration: none;">
+        <div>
+        
+          <img src="https://cdn2.stylecraze.com/wp-content/uploads/2017/08/How-To-Mix-And-Match-Colors-In-Your-Clothes--The-Ultimate-Color-Wheel-Guide-2.jpg.webp" alt="Error">
+          <h3>How To Mix and Match colors in Your Clothes</h3>
       </div>
-      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/amazing-ombre-nail-art-tutorial-with-detailed-steps-pictures/'">
-        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2017/08/How-To-Do-Ombre-Nails-Like-A-Pro-Tutorial-With-Pictures-2.jpg.webp" alt="Error">
+      </a>
+      <a href="https://www.stylecraze.com/articles/amazing-ombre-nail-art-tutorial-with-detailed-steps-pictures/" style="text-decoration: none;">
+        <div>
+        
+          <img src="https://cdn2.stylecraze.com/wp-content/uploads/2017/08/How-To-Do-Ombre-Nails-Like-A-Pro-Tutorial-With-Pictures-2.jpg.webp" alt="Error">
         <h3>How to Do Ombre Nails Like a Pro</h3>
       </div>
+      </a>
+
     </div>
+    <div id="container1">
+      <div>MAKE UP</div>
+      <hr class="line1" />
+    <a href="https://www.stylecraze.com/articles/101-make-up-tips-and-tricks/" style="text-decoration: none;">
+      <div id="card1">
+          <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/05/50-Makeup-Tips-You-Have-To-Know-6.jpg.webp" />
+          <div>
+              <h3>50 Makeup Tips You Have To Know</h3>
+              <P>Whether you are a beginner or an expert, makeup tips and tricks always come in handy for a smooth experience and tackling accidents. For example, a simple trick can help you get the perfect wing design or cat eyes using […]</P>
+              
+          </div> 
+      </div>
+    </a>
+  
+    <div id="box1">
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/eye-make-up-tutorials/'">
+          <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/05/25-Best-Eye-Makeup-Tutorials.jpg.webp" />
+          <h5>25 Best Eye Makeup Tutorials</h5>
+          <p><a href="https://www.stylecraze.com/author/eshasaxena/"> Esha Saxena</a>,<a href="https://www.stylecraze.com/articles/eye-make-up-tutorials/"> 114.0 shares</a></p>
+      </div>
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/how-to-do-nail-art-at-home/'">
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/05/10-Best-And-Easy-Nail-Art-Designs-To-Try-At-Home-In-2022.jpg.webp" />
+        <h5>10 Best And Easy Nail Art Designs To Try At Home In 2022</h5>
+        <p><a href="https://www.stylecraze.com/author/shaliniroy/"> Shalini Roy</a>,<a href="https://www.stylecraze.com/articles/how-to-do-nail-art-at-home/"> 26.7 shares</a></p>
+      </div>
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/black-girl-makeup/'">
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2012/05/Black-Girl-Makeup-Ideas-For-Different-Occasions.jpg.webp" />
+        <h5>Black Girl Makeup Ideas For Different Occasions</h5>
+        <p><a href="https://www.stylecraze.com/author/shaliniroy/"> Sushmita Brahman</a></p>
+      </div>
+    </div>
+    <div id="container2">
+      <div>HAIR STYLES</div>
+      <hr class="line2" />
+    <a href="https://www.stylecraze.com/articles/galaxy-hair-color-styles/" style="text-decoration: none;">
+      <div id="card2">
+          <img src="https://cdn2.stylecraze.com/wp-content/uploads/2019/06/29-Brilliant-Galaxy-Hair-Color-Styles-1.jpg.webp" />
+          <div>
+              <h3>29 Brilliant Galaxy Hair Color Styles</h3>
+              <P>Feast your eyes on these galaxy hair color ideas! They look not only stunning but also futuristic. If you dream about intergalactic travel, we can help you with a few hairstyles to suit your mood. Scroll through this catalog of […]</P>
+              
+          </div> 
+      </div>
+    </a>
+  
+    <div id="box2">
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/oil-slick-hair-color/'">
+          <img src="https://cdn2.stylecraze.com/wp-content/uploads/2019/06/Oil-Slick-Hair_-What-It-Is-How-To-Do-It-How-Long-It-Lasts.jpg.webp" />
+          <h5>Oil Slick Hair: What It Is, How To Do It, & How Long It Lasts</h5>
+          <p><a href="https://www.stylecraze.com/dc/sergio-r-cardona-perez/"> Reviewed by Sergio R. Cardona Perez, FWTS, FWTS</a></p>
+      </div>
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/cotton-candy-hair-color-idea/'">
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2019/06/20-Yummy-Cotton-Candy-Hair-Color-Ideas.jpg.webp" />
+        <h5>20 Yummy Cotton Candy Hair Color Ideas</h5>
+        <p><a href="https://www.stylecraze.com/author/arshiya/"> Arshyia Syeda</a>,<a href="https://www.stylecraze.com/articles/cotton-candy-hair-color-idea/"> 10.9 shares</a></p>
+      </div>
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/10-funky-hairstyles-for-short-hair/'">
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2019/06/38-Funky-Hairstyles-For-Short-Hair.jpg.webp" />
+        <h5>38 Funky Hairstyles For Short Hair</h5>
+        <p><a href="https://www.stylecraze.com/author/anjalisayee/"> Anjali Sayee</a>, <a href="https://www.stylecraze.com/articles/10-funky-hairstyles-for-short-hair/">2.3 Share</a></p>
+      </div>
+    </div>
+    <div id="container3">
+      <div>HEALTH WELLNESS</div>
+      <hr class="line3" />
+    <a href="https://www.stylecraze.com/articles/5-fruits-for-glowing-skin/" style="text-decoration: none;">
+      <div id="card3">
+          <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/05/20-Fruits-For-Glowing-Skin.jpg.webp" />
+          <div>
+              <h3>20 Fruits For Glowing Skin9 Brilliant Galaxy Hair Color Styles</h3>
+              <P>The journey to glowing skin starts with proper nourishment. Skin care products can only fix your skin from the outside. For that ‘lit-from-within’ glow, you need to include key vitamins and minerals in your diet. And the easiest way is […]</P>
+              
+          </div> 
+      </div>
+    </a>
+  
+    <div id="box3">
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/health-is-wealth-10-simple-tips-to-stay-healthy/'">
+          <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/05/Health-Is-Wealth-17-Best-Health-Tips-For-Women.jpg.webp" />
+          <h5>Health Is Wealth: 17 Best Health Tips For Women</h5>
+          <p><a href="https://www.stylecraze.com/dc/alexandra-dusenberry/"> Reviewed by Alexandra Dusenberry, MS, RDN, MS, RDN</a>,<a href="https://www.stylecraze.com/articles/health-is-wealth-10-simple-tips-to-stay-healthy/"> 724 shares</a></p>
+      </div>
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/foods-rich-in-oxygen/'">
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/05/30-Best-Oxygen-Rich-Foods-Fruits-Drinks-Veggies-And-Proteins-To-Boost-O2.jpg.webp" />
+        <h5>30 Best Oxygen-Rich Foods: Fruits, Drinks, Veggies, And Proteins To Boost O2</h5>
+        <p><a href="https://www.stylecraze.com/dc/mayuri-aavula/"> Medically Reviewed by Mayuri Aavula, MSc (Dietetics), MSc (Nutrition</a>,<a href="https://www.stylecraze.com/articles/foods-rich-in-oxygen/"> 1.2 shares</a></p>
+      </div>
+      <div style="cursor: pointer;" onclick="document.location='https://www.stylecraze.com/articles/best-benefits-of-walking/'">
+        <img src="https://cdn2.stylecraze.com/wp-content/uploads/2021/05/12-Amazing-Benefits-Of-Walking-And-Useful-Tips.jpg.webp" />
+        <h5>https://www.stylecraze.com/articles/best-benefits-of-walking/</h5>
+        <p><a href="https://www.stylecraze.com/dc/nichole-dandrea-russert/"> Reviewed by Nichole Dandrea-Russert, MS, RDN, MS, RDN</a>, <a href="https://www.stylecraze.com/articles/best-benefits-of-walking/">23 Share</a></p>
+      </div>
+    </div>
+    <div id="footer">
+      <div>
+          <ul>
+              <li><a href="https://www.stylecraze.com/about-us/">About Us</a></li>
+              <li> <a href="https://www.stylecraze.com/advertise-with-us/"> Advertise With Us</a></li>
+              <li><a href="https://www.stylecraze.com/image-usage-policy/"> Image Uses Policy</a></li>
+              <li><a href="https://www.stylecraze.com/privacy-policy/">Privacy Policy</a> </li>
+              <li><a href="https://www.stylecraze.com/contact-us/">Contact Us</a> </li>
+              <li><a href="https://www.stylecraze.com/terms-of-use/">Terms of Use</a> </li>
+              <li> <a href="https://www.stylecraze.com/editorial-guidelines/">Editorial Guidlines</a> </li>
+              <li><a href="https://www.stylecraze.com/affiliate-disclosure/">Affiliate Disclosure</a> </li>
+              <li><a href="https://www.stylecraze.com/doctors-join/">Join Our Medical Board</a> </li>
+              <li><a href="https://www.stylecraze.com/cookie-policy/"> Cookie Policy</a></li>
+              <li><a title="Press Room" href="https://www.stylecraze.com/press/"> Press Room</a></li>
+          </ul>
+      </div>
+  </div>
+  <div id="depth">
+      <div>
+      <p>Copyright © 2011 - 2022  <a href="https://www.incnut.com/"> IncNut Stylecraze Private Limited</a>. All rights reserved.</p>
+      <p>StyleCraze provides content of general nature that is designed for 
+          informational purposes only. The content is not intended to be a substitute 
+          for professional medical advice, diagnosis, or 
+          treatment. <a href="https://www.stylecraze.com/disclaimer/"> Click here for additional information</a></p>
+      </div>
+      
+  </div>
+
+    
+    
+    
+    
+      
+ 
 </body>
 </html>
